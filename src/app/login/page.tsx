@@ -38,7 +38,7 @@ const LoginPage = () => {
         placeholder="password"
       />
       <button
-        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
+        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
         onClick={onLogin}
       >
         Login here
