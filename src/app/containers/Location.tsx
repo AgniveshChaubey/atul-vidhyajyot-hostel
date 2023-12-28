@@ -1,12 +1,8 @@
-import { useEffect } from 'react';
-import { greetings } from '@/data/portfolio';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from "reactstrap";
 
-const Greetings = () => {
-  useEffect(() => {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement!.scrollTop = 0;
-  });
+const GoogleMap = () => {
+  const mapUrl =
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.568690535363!2d72.91913507475674!3d22.557824133512703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e0d3761116d%3A0x226f9e786735dc9b!2sAtul%20VidhyaJyot!5e0!3m2!1sen!2sin!4v1703742994116!5m2!1sen!2sin";
 
   return (
     <main>
@@ -26,21 +22,24 @@ const Greetings = () => {
           <Container className="py-lg-md d-flex">
             <div className="col px-0">
               <Row>
-                <Col lg="6">
-                  <h1 className="display-3 text-white">
-                    {greetings.greet + ' '}
-                  </h1>
-                  <h1 className="lead text-white">{greetings.description}</h1>
-                  {/* <SocialLinks /> */}
-                </Col>
-                <Col lg="6">
-                  {/* <GreetingLottie animationPath="/lottie/coding.json" /> */}
-                  <img src='../src/assets/png/homepageHostel.jpg'></img>
+                <Col lg="12">
+                  <h1 className="display-3 text-white pb-5">Location</h1>
+                  <iframe
+                    src={mapUrl}
+                    width="100%"
+                    height="450"
+                    style={{
+                      border: 0,
+                    }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </Col>
               </Row>
             </div>
           </Container>
-          {/* SVG separator */}
+
           <div className="separator separator-bottom separator-skew">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -54,10 +53,9 @@ const Greetings = () => {
             </svg>
           </div>
         </section>
-        {/* 1st Hero Variation */}
       </div>
     </main>
   );
 };
 
-export default Greetings;
+export default GoogleMap;
