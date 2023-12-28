@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { greetings } from '../../data/portfolio';
-import Headroom from 'headroom.js';
+import { useState, useEffect } from "react";
+import { greetings } from "../../data/portfolio";
+// @ts-ignore
+import Headroom from "headroom.js";
 import {
   UncontrolledCollapse,
   NavbarBrand,
@@ -8,16 +9,16 @@ import {
   Container,
   Row,
   Col,
-} from 'reactstrap';
+} from "reactstrap";
 
 const NavigationBar = () => {
-  const [collapseClasses, setCollapseClasses] = useState('');
-  const onExiting = () => setCollapseClasses('collapsing-out');
+  const [collapseClasses, setCollapseClasses] = useState("");
+  const onExiting = () => setCollapseClasses("collapsing-out");
 
-  const onExited = () => setCollapseClasses('');
+  const onExited = () => setCollapseClasses("");
 
   useEffect(() => {
-    let headroom = new Headroom(document.getElementById('navbar-main')!);
+    let headroom = new Headroom(document.getElementById("navbar-main")!);
     headroom.init();
   });
 

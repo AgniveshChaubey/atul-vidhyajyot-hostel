@@ -1,6 +1,8 @@
-import { useEffect } from 'react';
-import { greetings } from '@/data/portfolio';
-import { Container, Row, Col } from 'reactstrap';
+import { useEffect } from "react";
+import Image from "next/image";
+import { greetings } from "@/data/portfolio";
+import { Container, Row, Col } from "reactstrap";
+import hostelImg from "@/public/images/hostelHome.png";
 
 const Greetings = () => {
   useEffect(() => {
@@ -28,14 +30,19 @@ const Greetings = () => {
               <Row>
                 <Col lg="6">
                   <h1 className="display-3 text-white">
-                    {greetings.greet + ' '}
+                    {greetings.greet + " "}
                   </h1>
                   <h1 className="lead text-white">{greetings.description}</h1>
                   {/* <SocialLinks /> */}
                 </Col>
                 <Col lg="6">
-                  {/* <GreetingLottie animationPath="/lottie/coding.json" /> */}
-                  <img src='../src/assets/png/homepageHostel.jpg'></img>
+                  <Image
+                    src={hostelImg}
+                    alt="Hostel Home"
+                    style={{ borderRadius: "20px" }}
+                    width={500}
+                    height={500}
+                  />
                 </Col>
               </Row>
             </div>

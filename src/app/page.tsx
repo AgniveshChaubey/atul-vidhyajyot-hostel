@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 import Greetings from "./containers/Greetings";
 import GoogleMap from "./containers/Location";
+import Gallery from "./containers/Gallery";
 const NavigationBar = dynamic(() => import("./components/NavigationBar"));
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
     <>
       <NavigationBar />
       <Greetings />
+      <Gallery />
       <GoogleMap />
     </>
   );
