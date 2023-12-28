@@ -18,7 +18,7 @@ const Gallery = () => {
           <Fade right duration={2000}>
             {/* <h3 className="h3 mb-2">General</h3> */}
             <Image
-              className="d-flex justify-content-center flex-wrap mb-2 border"
+              className="mx-auto d-block mb-2 border"
               src={gen1}
               alt="Hostel Home"
               style={{ borderRadius: "20px" }}
@@ -44,7 +44,7 @@ const Gallery = () => {
           <Fade right duration={2000}>
             {/* <h3 className="h3 mb-2">Functions</h3> */}
             <Image
-              className="d-flex justify-content-center flex-wrap mb-2 border"
+              className="mx-auto d-block mb-2 border"
               src={fn1}
               alt="Hostel Home"
               style={{ borderRadius: "20px" }}

@@ -37,6 +37,7 @@ const Greetings = () => {
                 </Col>
                 <Col lg="6">
                   <Image
+                    className="mx-auto d-block mb-2"
                     src={hostelImg}
                     alt="Hostel Home"
                     style={{ borderRadius: "20px" }}
