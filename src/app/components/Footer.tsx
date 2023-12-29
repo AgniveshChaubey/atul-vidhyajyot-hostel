@@ -1,21 +1,8 @@
 import { Card, Col, Row, Container } from "reactstrap";
 import Link from "next/link";
+import { quickLinks, urlString } from "@/data/portfolio";
 
 const Footer = () => {
-  const quickLinks: string[] = [
-    "Home",
-    "About us",
-    "Facilities",
-    "Admission Process",
-    "Rules",
-    "Gallery",
-    "FAQs",
-  ];
-
-  const urlString = (str: string) => {
-    if (str === "Home") return "";
-    return str.toLowerCase().replace(/\s/g, "");
-  };
   return (
     <Card className="section-lg bg-gradient-info shadow-lg border-0">
       <Container className="">

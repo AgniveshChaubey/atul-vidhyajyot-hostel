@@ -6,10 +6,14 @@ import {
   UncontrolledCollapse,
   NavbarBrand,
   Navbar,
+  NavLink,
+  Nav,
   Container,
   Row,
   Col,
+  NavItem,
 } from "reactstrap";
+import { quickLinks, urlString } from "../../data/portfolio";
 
 const NavigationBar = () => {
   const [collapseClasses, setCollapseClasses] = useState("");
@@ -59,12 +63,25 @@ const NavigationBar = () => {
                   </Col>
                   <Col className="collapse-close" xs="6">
                     <button className="navbar-toggler" id="navbar_global">
-                      <span />
-                      <span />
                     </button>
                   </Col>
                 </Row>
               </div>
+              <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                {/* {quickLinks.map((each) => (
+                  <NavItem key={each}>
+                    <NavLink
+                      rel="noopener"
+                      aria-label={`${urlString(each)}`}
+                      className="nav-link-icon"
+                      href={urlString(each)}
+                      target="_blank"
+                    >
+                      {each}
+                    </NavLink>
+                  </NavItem>
+                ))} */}
+              </Nav>
             </UncontrolledCollapse>
           </Container>
         </Navbar>
@@ -72,5 +89,4 @@ const NavigationBar = () => {
     </>
   );
 };
-
 export default NavigationBar;
