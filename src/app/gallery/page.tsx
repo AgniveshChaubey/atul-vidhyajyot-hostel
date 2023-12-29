@@ -1,6 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
+import GalleryCard from "../components/GalleryCard";
+import { imageInfo } from "@/data/portfolio";
 
 const Gallery = () => {
   useEffect(() => {
@@ -35,10 +37,33 @@ const Gallery = () => {
                     </div>
                     <div className="pl-4">
                       <h2 className="display-3 text-white">Gallery</h2>
+                      <h1 className="lead text-white" style={{textAlign:"justify"}}>
+                        Welcome to Our Hostel Gallery: A Visual Journey of
+                        Vibrant Memories. Step into the heart of our hostel
+                        through captivating images that tell stories of
+                        camaraderie, laughter, and shared experiences. Explore
+                        the beauty of our spaces, the warmth of friendships, and
+                        the unique moments that make our hostel a home. Join us
+                        on a visual tour that celebrates the vibrant spirit of
+                        our community.
+                      </h1>
                     </div>
                   </div>
-                  <h1 className="lead text-white">Sample text</h1>
                 </Col>
+              </Row>
+              <Row>
+                {imageInfo.map(
+                  (
+                    info: { id: number; link: string; desc: string },
+                    i: number
+                  ) => {
+                    return (
+                      <Col className="order-lg-1" lg="6" key={i}>
+                        <GalleryCard info={info} />
+                      </Col>
+                    );
+                  }
+                )}
               </Row>
             </div>
           </Container>

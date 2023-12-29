@@ -117,6 +117,45 @@ export const faqData: FAQItem[] = [
     },
 ];
 
+export const imageInfo: { id: number, link: string, desc: string }[] = [
+    {
+        id: 1,
+        link: "",
+        desc: "aaa"
+    },
+    {
+        id: 2,
+        link: "",
+        desc: "bbb"
+    },
+    {
+        id: 3,
+        link: "",
+        desc: "ccc"
+    },
+];
+
+export const alumniInfo: { id: number, name: string, designation: string, contact?: string }[] = [
+    {
+        id: 1,
+        name: "",
+        designation: "aaa",
+        contact: "1"
+    },
+    {
+        id: 2,
+        name: "",
+        designation: "bbb",
+        contact: "2"
+    },
+    {
+        id: 3,
+        name: "",
+        designation: "ccc",
+        contact: "3"
+    },
+];
+
 export const hostelRules: string[] = [
     "Every student of this hostel must adhere to the rules of this hostel.",
     "Everyone must take bath before 7:30 am in the morning.",

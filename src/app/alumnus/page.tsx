@@ -1,6 +1,10 @@
 "use client";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
+import { alumniInfo } from "@/data/portfolio";
+import { Card, CardBody, CardFooter } from "reactstrap";
+// @ts-ignore
+import Fade from "react-reveal/Fade";
 
 const AdmissionProcess = () => {
   useEffect(() => {
@@ -37,9 +41,7 @@ const AdmissionProcess = () => {
                       className="pl-4 text-white"
                       style={{ textAlign: "justify" }}
                     >
-                      <h2 className="display-3 text-white">
-                        Alumnus
-                      </h2>
+                      <h2 className="display-3 text-white">Alumnus</h2>
                       <h5 className="lead text-white">
                         Explore Our Accomplished Alumni: A Proud Legacy of
                         Success. Discover the inspiring journeys of individuals
@@ -51,6 +53,32 @@ const AdmissionProcess = () => {
                     </div>
                   </div>
                 </Col>
+              </Row>
+              <Row>
+                {alumniInfo.map(
+                  (
+                    info: {
+                      id: number;
+                      name: string;
+                      designation: string;
+                      contact?: string;
+                    },
+                    i: number
+                  ) => {
+                    return (
+                      <Col className="order-lg-1" lg="6" key={i}>
+                        <Fade left duration={2000}>
+                          <Card className="card-lift--hover shadow mt-4">
+                            <CardBody>
+                              <h1>{info.id}</h1>
+                            </CardBody>
+                            <CardFooter>{info.designation}</CardFooter>
+                          </Card>
+                        </Fade>
+                      </Col>
+                    );
+                  }
+                )}
               </Row>
             </div>
           </Container>
