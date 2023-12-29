@@ -5,6 +5,7 @@ import GoogleMap from "./containers/Location";
 import Gallery from "./containers/Gallery";
 import Facilities from "./containers/Facilities";
 import QuickLinks from "./components/ExploreMore";
+import Footer from "./components/Footer";
 const NavigationBar = dynamic(() => import("./components/NavigationBar"));
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <GoogleMap />
       <Facilities />
       <QuickLinks />
+      <Footer />
     </>
   );
 };

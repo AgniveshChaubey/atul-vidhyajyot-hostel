@@ -1,6 +1,7 @@
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 import { Container, Row, Card, CardBody, Col, Button } from "reactstrap";
 import Fade from "react-reveal/Fade";
+import Link from "next/link";
 
 const ExploreMore = () => {
   return (
@@ -27,15 +28,19 @@ const ExploreMore = () => {
                   className="bg-gradient-info"
                   style={{ borderRadius: "20px" }}
                 >
-                  <div className="d-flex px-3 justify-content-center ">
-                    <div className="">
-                      <h4 className="text-white">
-                        {" "}
-                        <strong className="mr-2">Admission Process</strong>{" "}
-                        <FaSquareArrowUpRight />
-                      </h4>
+                  <Link href="admissionprocess">
+                    <div className="d-flex px-3 justify-content-center ">
+                      <div className="">
+                        <h4 className="text-white">
+                          {" "}
+                          <strong className="mr-2">
+                            Admission Process
+                          </strong>{" "}
+                          <FaSquareArrowUpRight />
+                        </h4>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </CardBody>
               </Card>
             </Fade>
@@ -50,17 +55,19 @@ const ExploreMore = () => {
                   className="bg-gradient-info"
                   style={{ borderRadius: "20px" }}
                 >
-                  <div className="d-flex px-3 justify-content-center ">
-                    <div className="">
-                      <h4 className="text-white">
-                        {" "}
-                        <strong className="mr-2">
-                          Rules and Regulations
-                        </strong>{" "}
-                        <FaSquareArrowUpRight />
-                      </h4>
+                  <Link href="/rules">
+                    <div className="d-flex px-3 justify-content-center ">
+                      <div className="">
+                        <h4 className="text-white">
+                          {" "}
+                          <strong className="mr-2">
+                            Rules and Regulations
+                          </strong>{" "}
+                          <FaSquareArrowUpRight />
+                        </h4>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </CardBody>
               </Card>
             </Fade>
