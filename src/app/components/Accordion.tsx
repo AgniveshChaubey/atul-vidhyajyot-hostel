@@ -21,9 +21,11 @@ function MyAccordion({ faqData }: any) {
       <Accordion open={open} toggle={toggle}>
         {faqData.map((faq: any, i: number) => (
           <AccordionItem>
-            <AccordionHeader targetId={`${i}`}>{faq.question}</AccordionHeader>
+            <AccordionHeader targetId={`${i}`}>
+              <i>{faq.question}</i>
+            </AccordionHeader>
             <AccordionBody accordionId={`${i}`}>
-              <i>{faq.answer}</i>
+              <strong>{faq.answer}</strong>
             </AccordionBody>
           </AccordionItem>
         ))}

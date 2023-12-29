@@ -16,8 +16,10 @@ export const facilities: string[] = [
     "Biweekly Feast",
     "Hot Water",
     "Library/Reading Room",
+    "Gym",
     "Clean Campus",
     "Parking Facility",
+    "Weekly Mentoring Program"
 ];
 
 export const quickLinks: string[] = [
@@ -83,8 +85,12 @@ export const faqData: FAQItem[] = [
         answer: "Only single non-ac rooms are available with two beds per room.",
     },
     {
-        question: "is there any facilitiey of hot water in the hostel?",
+        question: "Is there any facilitiey of hot water in the hostel?",
         answer: "Yes, we do have supply of hot water 24/7.",
+    },
+    {
+        question: "can we stay here and have our means outside?",
+        answer: "No, if you stay here, you must have to take your means here."
     },
     {
         question: "Are there common areas for socializing?",
