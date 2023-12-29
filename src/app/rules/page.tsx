@@ -1,4 +1,5 @@
 "use client";
+import { hostelRules } from "@/data/portfolio";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 
@@ -34,10 +35,44 @@ const Rules = () => {
                       </div>
                     </div>
                     <div className="pl-4">
-                      <h2 className="display-3 text-white">Admission Process</h2>
+                      <h2 className="display-3 text-white">
+                        Rules and Regulations
+                        <h5
+                          className="lead text-white"
+                          style={{ textAlign: "justify" }}
+                        >
+                          Welcome to our Hostel Rules and Regulations Page!
+                          Here, we've laid out some simple guidelines to ensure
+                          everyone enjoys a safe and supportive stay. These
+                          rules are designed to create a positive environment
+                          for all students, fostering a bright and successful
+                          future. Let's make our hostel a place where everyone
+                          can thrive!
+                          <p className="p-2 text-yellow">
+                            <i>Note: Rules are mandatory to follow!</i>
+                          </p>
+                          <hr
+                            style={{
+                              height: "2px",
+                              backgroundColor: "black",
+                              margin: "20px",
+                            }}
+                          />
+                          <ul
+                            className="ml-4"
+                            style={{
+                              textAlign: "justify",
+                              listStyleType: "square",
+                            }}
+                          >
+                            {hostelRules.map((rule) => (
+                              <li>{rule}</li>
+                            ))}
+                          </ul>
+                        </h5>
+                      </h2>
                     </div>
                   </div>
-                  <h1 className="lead text-white">Sample text</h1>
                 </Col>
               </Row>
             </div>

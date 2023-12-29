@@ -32,7 +32,7 @@ const Greetings = () => {
                   <h1 className="display-3 text-white">
                     {greetings.greet + " "}
                   </h1>
-                  <h1 className="lead text-white">{greetings.description}</h1>
+                  <h1 className="lead text-white" style={{textAlign:"justify"}}>{greetings.description}</h1>
                   {/* <SocialLinks /> */}
                 </Col>
                 <Col lg="6">

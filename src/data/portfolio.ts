@@ -15,17 +15,17 @@ export const facilities: string[] = [
     "2 Meals per day",
     "Biweekly Feast",
     "Hot Water",
+    "Drinking RO Water",
     "Library/Reading Room",
     "Gym",
     "Clean Campus",
     "Parking Facility",
-    "Weekly Mentoring Program"
+    "Weekly Mentoring Program",
 ];
 
 export const quickLinks: string[] = [
     "Home",
     "About us",
-    "Facilities",
     "Admission Process",
     "Rules",
     "Gallery",
@@ -74,11 +74,13 @@ export type FAQItem = {
 export const faqData: FAQItem[] = [
     {
         question: "Is accomodation free in this hostel?",
-        answer: "Absolutely, the accomodation is 100% free. You just have to pay for your meals."
+        answer:
+            "Absolutely, the accomodation is 100% free. You just have to pay for your meals.",
     },
     {
         question: "How can I book a room in your hostel?",
-        answer: "you simply have to contact hostel's rector and provide your educational marksheet."
+        answer:
+            "you simply have to contact hostel's rector and provide your educational marksheet.",
     },
     {
         question: "What types of rooms are available?",
@@ -90,23 +92,46 @@ export const faqData: FAQItem[] = [
     },
     {
         question: "can we stay here and have our means outside?",
-        answer: "No, if you stay here, you must have to take your means here."
+        answer: "No, if you stay here, you must have to take your means here.",
     },
     {
         question: "Are there common areas for socializing?",
-        answer: "Yes, we have library, front gallery and terrace for socializing with each other.",
+        answer:
+            "Yes, we have library, front gallery and terrace for socializing with each other.",
     },
     {
         question: "What are the check-in and check-out times?",
-        answer: "There's no strict timing for check-in, but after 11:00 PM student must require permission of rector for checking-out.",
+        answer:
+            "There's no strict timing for check-in, but after 11:00 pm student must require permission of rector for checking-out.",
     },
     {
         question: "How is the security ensured in the hostel?",
-        answer: "We only provide admission to honest candidates and in the span of 27 years, not a single case of mis-security has happened. So don't worry about that.",
+        answer:
+            "We only provide admission to honest candidates and in the span of 27 years, not a single case of mis-security has happened. So don't worry about that.",
     },
     {
         question: "Is smoking allowed in the hostel?",
         answer: "No, smoking is strictly prohibited in our hostel.",
     },
+];
 
+export const hostelRules: string[] = [
+    "Every student of this hostel must adhere to the rules of this hostel.",
+    "Everyone must take bath before 7:30 am in the morning.",
+    "Without rector's permission, no one is allowed to go outside before 6:00 am in the morning and after 11:00 pm in the evening.",
+    "Indulging in any form of addiction is prohibited and if caught indulging will be expelled from the hostel.",
+    "Mandatory to accompany the guardian during the admission process.",
+    "Cleaning of the rooms allotted by the hostel and communal cleaning of the hostel every Sunday",
+    "Do not allow family, friends or other persons to enter the hostel without the permission of the Rector.",
+    "Leave will not be granted from the hostel except for a valid reason.",
+    "Every student staying in the hostel will compulsorily eat in the canteen of the hostel.",
+    "Canteen fees should be deposited 3 months in advance. And there will be no cut in any kind of meal.",
+    "If the admission is canceled after depositing the canteen money, then the canteen money will not be refunded.",
+    "Any political party or social strike, will not be allowed to participate in public activities. Student body establishment or activities shall be avoided. There was no stay in the hostel for anything except studies.",
+    "Every student must compulsorily attend the prayer at 6:45 pm",
+    "Compulsorily attend meditation program every Sunday from 10:45 to 12:00 noon.",
+    "If any student is caught misbehaving, misbehaving in the educational institution, that student will be permanently expelled from the hostel.",
+    "Compulsory reading is to be done from 9:00 pm to 11:00 pm.",
+    "The Rector's decision in all matters shall be final and shall not be challenged or objected to.",
+    "If any of the above rules are violated by the student, the fine imposed by the Rector shall be upheld. If the fine is not upheld, he will be expelled from the hostel."
 ];
