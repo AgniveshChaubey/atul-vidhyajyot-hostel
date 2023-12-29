@@ -1,6 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
+import MyAccordion from "../components/Accordion";
+import { faqData } from "@/data/portfolio";
 
 const FAQs = () => {
   useEffect(() => {
@@ -33,11 +35,18 @@ const FAQs = () => {
                         <i className="ni ni-laptop text-info" />
                       </div>
                     </div>
-                    <div className="pl-4">
-                      <h2 className="display-3 text-white">Frequently Asked Questions</h2>
+                    <div className="pl-4" style={{ minWidth: "80%" }}>
+                      <h2 className="display-3 text-white">
+                        Frequently Asked Questions
+                      </h2>
+                      <p className="lead text-white mb-5">
+                        Got Questions? Find Clear Answers Here! Everything You
+                        Need to Know About Your Hostel Stay in Our Simple and
+                        Helpful Frequently Asked Questions Section.
+                      </p>
+                      <MyAccordion faqData={faqData} />
                     </div>
                   </div>
-                  <h1 className="lead text-white">Sample text</h1>
                 </Col>
               </Row>
             </div>
