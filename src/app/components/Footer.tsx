@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const quickLinks: string[] = [
+    "Home",
     "About us",
     "Facilities",
     "Admission Process",
@@ -12,6 +13,7 @@ const Footer = () => {
   ];
 
   const urlString = (str: string) => {
+    if (str === "Home") return "";
     return str.toLowerCase().replace(/\s/g, "");
   };
   return (
@@ -27,12 +29,12 @@ const Footer = () => {
                 className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"
               />
             </Col>
-            <Col lg="6" className="order-lg-1">
+            <Col lg="6" sm="6" className="order-lg-1">
               <h2 className="text-white">Contact us!</h2>
               <p className="text-white">Mobile No. +91 7621847331</p>
               <p className="text-white">Email: abc@gmail.com</p>
             </Col>
-            <Col lg="6" className="order-lg-1">
+            <Col lg="6" sm="6" className="order-lg-1">
               <h2 className="text-white justify-content-center">Quick Links</h2>
               <ul style={{ color: "white" }}>
                 {quickLinks.map((each, i) => (
