@@ -1,5 +1,6 @@
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 import { Container, Row, Card, CardBody, Col, Button } from "reactstrap";
+// @ts-ignore
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 
@@ -18,6 +19,31 @@ const ExploreMore = () => {
           </div>
         </div>
         <Row className="row-grid align-items-center">
+          <Col lg="6">
+            <Fade bottom duration={2000}>
+              <Card
+                className="shadow-lg--hover shadow mt-4"
+                style={{ borderRadius: "20px" }}
+              >
+                <CardBody
+                  className="bg-gradient-info"
+                  style={{ borderRadius: "20px" }}
+                >
+                  <Link href="aboutus">
+                    <div className="d-flex px-3 justify-content-center ">
+                      <div className="">
+                        <h4 className="text-white">
+                          {" "}
+                          <strong className="mr-2">About Us</strong>{" "}
+                          <FaSquareArrowUpRight />
+                        </h4>
+                      </div>
+                    </div>
+                  </Link>
+                </CardBody>
+              </Card>
+            </Fade>
+          </Col>
           <Col lg="6">
             <Fade bottom duration={2000}>
               <Card
@@ -55,6 +81,31 @@ const ExploreMore = () => {
                   className="bg-gradient-info"
                   style={{ borderRadius: "20px" }}
                 >
+                  <Link href="alumnus">
+                    <div className="d-flex px-3 justify-content-center ">
+                      <div className="">
+                        <h4 className="text-white">
+                          {" "}
+                          <strong className="mr-2">Alumnus</strong>{" "}
+                          <FaSquareArrowUpRight />
+                        </h4>
+                      </div>
+                    </div>
+                  </Link>
+                </CardBody>
+              </Card>
+            </Fade>
+          </Col>
+          <Col lg="6">
+            <Fade bottom duration={2000}>
+              <Card
+                className="shadow-lg--hover shadow mt-4"
+                style={{ borderRadius: "20px" }}
+              >
+                <CardBody
+                  className="bg-gradient-info"
+                  style={{ borderRadius: "20px" }}
+                >
                   <Link href="/rules">
                     <div className="d-flex px-3 justify-content-center ">
                       <div className="">
@@ -63,6 +114,31 @@ const ExploreMore = () => {
                           <strong className="mr-2">
                             Rules and Regulations
                           </strong>{" "}
+                          <FaSquareArrowUpRight />
+                        </h4>
+                      </div>
+                    </div>
+                  </Link>
+                </CardBody>
+              </Card>
+            </Fade>
+          </Col>
+          <Col lg="6">
+            <Fade bottom duration={2000}>
+              <Card
+                className="shadow-lg--hover shadow mt-4"
+                style={{ borderRadius: "20px" }}
+              >
+                <CardBody
+                  className="bg-gradient-info"
+                  style={{ borderRadius: "20px" }}
+                >
+                  <Link href="faqs">
+                    <div className="d-flex px-3 justify-content-center ">
+                      <div className="">
+                        <h4 className="text-white">
+                          {" "}
+                          <strong className="mr-2">FAQs</strong>{" "}
                           <FaSquareArrowUpRight />
                         </h4>
                       </div>

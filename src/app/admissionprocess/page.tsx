@@ -33,11 +33,53 @@ const AdmissionProcess = () => {
                         <i className="ni ni-laptop text-info" />
                       </div>
                     </div>
-                    <div className="pl-4">
-                      <h2 className="display-3 text-white">Admission Process</h2>
+                    <div
+                      className="pl-4 text-white"
+                      style={{ textAlign: "justify" }}
+                    >
+                      <h2 className="display-3 text-white">
+                        Admission Process
+                      </h2>
+                      <p className="lead">
+                        Admission to this hostel is entirely merit-based. We
+                        accommodate only 36 students, and the admission process
+                        hinges entirely on the students' academic results. The
+                        higher the results, the greater the chance of selection.
+                        Generally, marks above 70% are considered favorable.
+                      </p>
+                      <p className="lead">
+                        Following the evaluation of academic results, successful
+                        candidates are required to contact the Rector for the
+                        next steps. The Rector conducts an interview to assess
+                        the student's suitability, and admission decisions are
+                        made accordingly. It is mandatory for students to bring
+                        their parents during the admission process.
+                      </p>
+
+                      <i className="text-yellow">
+                        Requied documents at the time of admission are:
+                      </i>
+                      <ul className="pl-5">
+                        <li>Passport size photo (two copies)</li>
+                        <li>Photo ID proof</li>
+                        <li>Latest markesheet</li>
+                      </ul>
+
+                      <p style={{ textAlign: "center" }}>
+                        <strong>
+                          Students are required to complete the Google Form
+                          below:
+                        </strong>
+                        <iframe
+                          src="https://docs.google.com/forms/d/1dvWwuGcoq6HRr_PZlhz_CJ4_aHxRz7FMXvh60APKrdA/viewform?embedded=true"
+                          width="640"
+                          height="800"
+                        >
+                          Loading...
+                        </iframe>
+                      </p>
                     </div>
                   </div>
-                  <h1 className="lead text-white">Sample text</h1>
                 </Col>
               </Row>
             </div>

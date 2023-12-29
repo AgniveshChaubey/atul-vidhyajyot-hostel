@@ -18,8 +18,8 @@ const Footer = () => {
             </Col>
             <Col lg="6" sm="6" className="order-lg-1">
               <h2 className="text-white">Contact us!</h2>
-              <p className="text-white">Mobile No. +91 7621847331</p>
-              <p className="text-white">Email: abc@gmail.com</p>
+              <p className="text-white">Mobile No. +91 7621847331 (Siddhrajsinh Solanki)</p>
+              <p className="text-white">Email: Siddharajsinhsolanki988@gmail.com</p>
             </Col>
             <Col lg="6" sm="6" className="order-lg-1">
               <h2 className="text-white justify-content-center">Quick Links</h2>

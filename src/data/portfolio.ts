@@ -21,6 +21,7 @@ export const facilities: string[] = [
     "Clean Campus",
     "Parking Facility",
     "Weekly Mentoring Program",
+    "Some Extra Perks..."
 ];
 
 export const quickLinks: string[] = [
@@ -29,6 +30,7 @@ export const quickLinks: string[] = [
     "Admission Process",
     "Rules",
     "Gallery",
+    "Alumnus",
     "FAQs",
 ];
 

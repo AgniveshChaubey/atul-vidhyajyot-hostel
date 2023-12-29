@@ -1,10 +1,8 @@
+"use client";
 import { useEffect } from "react";
-import Image from "next/image";
-import { greetings } from "@/data/portfolio";
 import { Container, Row, Col } from "reactstrap";
-import hostelImg from "@/public/images/hostelHomepage.jpg";
 
-const Greetings = () => {
+const AdmissionProcess = () => {
   useEffect(() => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement!.scrollTop = 0;
@@ -28,27 +26,26 @@ const Greetings = () => {
           <Container className="py-lg-md d-flex">
             <div className="col px-0">
               <Row>
-                <Col lg="6">
-                  <h1 className="display-3 text-white">
-                    {greetings.greet + " "}
-                  </h1>
-                  <h1 className="lead text-white" style={{textAlign:"justify"}}>{greetings.description}</h1>
-                  {/* <SocialLinks /> */}
-                </Col>
-                <Col lg="6">
-                  <Image
-                    className="mx-auto d-block mb-2"
-                    src={hostelImg}
-                    alt="Hostel Home"
-                    style={{ borderRadius: "20px" }}
-                    width={500}
-                    height={500}
-                  />
+                <Col lg="12">
+                  <div className="d-flex p-4">
+                    <div>
+                      <div className="icon icon-md icon-shape bg-gradient-white shadow rounded-circle text-info">
+                        <i className="ni ni-laptop text-info" />
+                      </div>
+                    </div>
+                    <div
+                      className="pl-4 text-white"
+                      style={{ textAlign: "justify" }}
+                    >
+                      <h2 className="display-3 text-white">
+                        Admission Process
+                      </h2>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </div>
           </Container>
-          {/* SVG separator */}
           <div className="separator separator-bottom separator-skew">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,10 +59,9 @@ const Greetings = () => {
             </svg>
           </div>
         </section>
-        {/* 1st Hero Variation */}
       </div>
     </main>
   );
 };
 
-export default Greetings;
+export default AdmissionProcess;
