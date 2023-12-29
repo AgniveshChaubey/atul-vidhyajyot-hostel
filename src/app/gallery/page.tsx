@@ -2,7 +2,8 @@
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import GalleryCard from "../components/GalleryCard";
-import { imageInfo } from "@/data/portfolio";
+import { imageInfo } from "@/data/hostelData";
+import Footer from "../components/Footer";
 
 const Gallery = () => {
   useEffect(() => {
@@ -37,7 +38,10 @@ const Gallery = () => {
                     </div>
                     <div className="pl-4">
                       <h2 className="display-3 text-white">Gallery</h2>
-                      <h1 className="lead text-white" style={{textAlign:"justify"}}>
+                      <h1
+                        className="lead text-white"
+                        style={{ textAlign: "justify" }}
+                      >
                         Welcome to Our Hostel Gallery: A Visual Journey of
                         Vibrant Memories. Step into the heart of our hostel
                         through captivating images that tell stories of
@@ -81,6 +85,7 @@ const Gallery = () => {
           </div>
         </section>
       </div>
+      <Footer value={"yes"} />
     </main>
   );
 };

@@ -9,7 +9,7 @@ import functions from "../../public/lottie/functions.json";
 import fn1 from "@/public/images/functions/fn1.png";
 import gen1 from "@/public/images/general/gen1.png";
 import GeneralCarousel from "../components/GeneralCarousel";
-import { functionPhotos, generalPhotos } from "@/data/portfolio";
+import { functionPhotos, generalPhotos } from "@/data/hostelData";
 
 const Gallery = () => {
   return (

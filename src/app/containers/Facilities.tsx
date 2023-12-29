@@ -1,4 +1,4 @@
-import { facilities } from "../../data/portfolio";
+import { facilities } from "../../data/hostelData";
 import { Container, Row } from "reactstrap";
 import FacilityCard from "@/app/components/FacilityCard";
 

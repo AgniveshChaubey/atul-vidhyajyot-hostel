@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
+import Footer from "../components/Footer";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -94,6 +95,7 @@ const AboutUs = () => {
           </div>
         </section>
       </div>
+      <Footer value={"yes"} />
     </main>
   );
 };

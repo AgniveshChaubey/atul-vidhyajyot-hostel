@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Image from "next/image";
-import { greetings } from "@/data/portfolio";
+import { greetings } from "@/data/hostelData";
 import { Container, Row, Col } from "reactstrap";
 import hostelImg from "@/public/images/hostelHomepage.jpg";
 

@@ -2,7 +2,8 @@
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import MyAccordion from "../components/Accordion";
-import { faqData } from "@/data/portfolio";
+import { faqData } from "@/data/hostelData";
+import Footer from "../components/Footer";
 
 const FAQs = () => {
   useEffect(() => {
@@ -65,6 +66,7 @@ const FAQs = () => {
           </div>
         </section>
       </div>
+      <Footer value={"yes"} />
     </main>
   );
 };

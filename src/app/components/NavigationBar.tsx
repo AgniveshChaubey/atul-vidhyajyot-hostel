@@ -1,5 +1,6 @@
+"use client";
 import { useState, useEffect } from "react";
-import { greetings } from "../../data/portfolio";
+import { greetings } from "../../data/hostelData";
 // @ts-ignore
 import Headroom from "headroom.js";
 import {
@@ -13,7 +14,7 @@ import {
   Col,
   NavItem,
 } from "reactstrap";
-import { quickLinks, urlString } from "../../data/portfolio";
+import { quickLinks, urlString } from "../../data/hostelData";
 
 const NavigationBar = () => {
   const [collapseClasses, setCollapseClasses] = useState("");

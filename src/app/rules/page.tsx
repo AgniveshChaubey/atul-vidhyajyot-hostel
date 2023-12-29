@@ -1,7 +1,8 @@
 "use client";
-import { hostelRules, hostelRulesGuj } from "@/data/portfolio";
+import { hostelRules, hostelRulesGuj } from "@/data/hostelData";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
+import Footer from "../components/Footer";
 
 const Rules = () => {
   useEffect(() => {
@@ -103,6 +104,7 @@ const Rules = () => {
           </div>
         </section>
       </div>
+      <Footer value={"yes"} />
     </main>
   );
 };

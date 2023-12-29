@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
+import Footer from "../components/Footer";
 
 const AdmissionProcess = () => {
   useEffect(() => {
@@ -98,6 +99,7 @@ const AdmissionProcess = () => {
           </div>
         </section>
       </div>
+      <Footer value={"yes"} />
     </main>
   );
 };

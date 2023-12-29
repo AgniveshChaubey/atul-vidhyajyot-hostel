@@ -11,7 +11,6 @@ const NavigationBar = dynamic(() => import("./components/NavigationBar"));
 const Home = () => {
   return (
     <>
-      <NavigationBar />
       <Greetings />
       <Gallery />
       <GoogleMap />
