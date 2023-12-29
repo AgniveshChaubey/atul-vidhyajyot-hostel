@@ -1,5 +1,5 @@
 "use client";
-import { hostelRules } from "@/data/portfolio";
+import { hostelRules, hostelRulesGuj } from "@/data/portfolio";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 
@@ -51,6 +51,18 @@ const Rules = () => {
                           <p className="p-2 text-yellow">
                             <i>Note: Rules are mandatory to follow!</i>
                           </p>
+                          <hr
+                            style={{
+                              height: "2px",
+                              backgroundColor: "black",
+                              margin: "20px",
+                            }}
+                          />
+                          <ul className="ml-4">
+                            {hostelRulesGuj.map((rule) => (
+                              <li>{rule}</li>
+                            ))}
+                          </ul>
                           <hr
                             style={{
                               height: "2px",

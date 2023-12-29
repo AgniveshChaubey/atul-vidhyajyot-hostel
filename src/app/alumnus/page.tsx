@@ -38,8 +38,16 @@ const AdmissionProcess = () => {
                       style={{ textAlign: "justify" }}
                     >
                       <h2 className="display-3 text-white">
-                        Admission Process
+                        Alumnus
                       </h2>
+                      <h5 className="lead text-white">
+                        Explore Our Accomplished Alumni: A Proud Legacy of
+                        Success. Discover the inspiring journeys of individuals
+                        who once called our hostel home. Many of our former
+                        residents have gone on to hold significant and esteemed
+                        positions. Get to know our talented alumni community and
+                        the impact they've made in various fields.
+                      </h5>
                     </div>
                   </div>
                 </Col>
