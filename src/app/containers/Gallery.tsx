@@ -16,11 +16,9 @@ const Gallery = () => {
       <h1 className="h1">Gallery</h1>
 
       <Row className="my-5">
-        <Col lg="6" className="order-1 order-lg-2">
+        <Col lg="6" className="order-1 order-lg-2" >
           <Fade right duration={2000}>
-            {/* <h3 className="h3 mb-2">General</h3> */}
             <GeneralCarousel items={generalCarouselPhotos} />
-            {/* <Image src={'/me.png'} alt="aa" width={500} height={500} /> */}
           </Fade>
         </Col>
         <Col lg="6" className="order-2 order-lg-1">
@@ -39,7 +37,7 @@ const Gallery = () => {
         <Col lg="6" className="order-2 order-lg-1">
           <Fade right duration={2000}>
             {/* <h3 className="h3 mb-2">Functions</h3> */}
-            <GeneralCarousel items={functionPhotos} />
+            <GeneralCarousel items={generalCarouselPhotos} />
           </Fade>
         </Col>
         <Col lg="6" className="order-1 order-lg-2">

@@ -35,12 +35,12 @@ const Greetings = () => {
                   <h1 className="lead text-white" style={{textAlign:"justify"}}>{greetings.description}</h1>
                   {/* <SocialLinks /> */}
                 </Col>
-                <Col lg="6">
+                <Col lg="5" className="ml-2">
                   <Image
-                    className="mx-auto d-block mb-2"
+                    className="mx-auto d-block mb-2 p-3"
                     src={hostelImg}
                     alt="Hostel Home"
-                    style={{ borderRadius: "20px" }}
+                    style={{border:"2px solid black", backgroundColor: "white" }}
                     width={500}
                     height={500}
                   />
