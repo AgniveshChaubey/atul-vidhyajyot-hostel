@@ -11,6 +11,7 @@ import gen1 from "@/public/images/general/gen1.png";
 import GeneralCarousel from "../components/GeneralCarousel";
 import { functionPhotos, generalPhotos } from "@/data/hostelData";
 
+import me from "./me.png"
 const Gallery = () => {
   return (
     <Container className="text-center my-5 section section-lg">
@@ -21,6 +22,7 @@ const Gallery = () => {
           <Fade right duration={2000}>
             {/* <h3 className="h3 mb-2">General</h3> */}
             <GeneralCarousel items={generalPhotos} />
+            {/* <Image src={'/me.png'} alt="aa" width={500} height={500} /> */}
           </Fade>
         </Col>
         <Col lg="6" className="order-2 order-lg-1">

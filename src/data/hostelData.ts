@@ -1,7 +1,30 @@
+import { StaticImageData } from "next/image";
 import {
     GreetingsType,
     // @ts-ignore
 } from "./types/sections";
+
+import one from "@/public/images/general/1-front.jpg";
+import two from "@/public/images/general/2-lobby.jpg";
+import three from "@/public/images/general/3-lobby.jpg";
+import four from "@/public/images/general/4-room.jpg";
+import five from "@/public/images/general/5-parking.jpg";
+import six from "@/public/images/general/6-office.jpg";
+import seven from "@/public/images/general/7-office.jpg";
+import eight from "@/public/images/general/8-reading-room.jpg";
+import nine from "@/public/images/general/9-mini-library.jpg";
+import ten from "@/public/images/general/10-mini-gym.jpg";
+import eleven from "@/public/images/general/11-common-hall.jpg";
+import twelve from "@/public/images/general/12-RO-water.jpg";
+import thirteen from "@/public/images/general/13-canteen.jpg";
+import fourteen from "@/public/images/general/14-wash-basin.jpg";
+import fifteen from "@/public/images/general/15-bathroom.jpg";
+import sixteen from "@/public/images/general/16-backyard.jpg";
+import seventeen from "@/public/images/general/17-sideyard.jpg";
+import eighteen from "@/public/images/general/18-terrace.jpg";
+import nineteen from "@/public/images/general/19-terrace.jpg";
+
+
 
 export const greetings: GreetingsType = {
     name: "Atul Vidhyajyot Hostel",
@@ -117,22 +140,103 @@ export const faqData: FAQItem[] = [
     },
 ];
 
-export const imageInfo: { id: number, link: string, desc: string }[] = [
+export const imageInfo: { id: number, src: StaticImageData, desc: string }[] = [
     {
         id: 1,
-        link: "",
-        desc: "aaa"
+        src: one,
+        desc: "Hostel's Front View"
     },
     {
         id: 2,
-        link: "",
-        desc: "bbb"
+        src: two,
+        desc: "Lobby"
     },
     {
         id: 3,
-        link: "",
-        desc: "ccc"
+        src: three,
+        desc: "Lobby"
     },
+    {
+        id: 4,
+        src: four,
+        desc: "Room"
+    },
+    {
+        id: 5,
+        src: five,
+        desc: "Parking"
+    },
+    {
+        id: 6,
+        src: six,
+        desc: "Office"
+    },
+
+    {
+        id: 7,
+        src: seven,
+        desc: "Office"
+    },
+    {
+        id: 8,
+        src: eight,
+        desc: "Reading Room"
+    },
+    {
+        id: 9,
+        src: nine,
+        desc: "Mini Library"
+    },
+    {
+        id: 10,
+        src: ten,
+        desc: "Mini Gym"
+    },
+    {
+        id: 11,
+        src: eleven,
+        desc: "Common Hall"
+    },
+    {
+        id: 12,
+        src: twelve,
+        desc: "RO Drinking Water"
+    },
+    {
+        id: 13,
+        src: thirteen,
+        desc: "Canteen"
+    },
+    {
+        id: 14,
+        src: fourteen,
+        desc: "Wash Basin"
+    },
+    {
+        id: 15,
+        src: fifteen,
+        desc: "Bathroom"
+    },
+    {
+        id: 16,
+        src: sixteen,
+        desc: "Backyard"
+    },
+    {
+        id: 17,
+        src: seventeen,
+        desc: "Sideyard"
+    },
+    {
+        id: 18,
+        src: eighteen,
+        desc: "Solar Plate"
+    },
+    {
+        id: 19,
+        src: nineteen,
+        desc: "Terrace"
+    }
 ];
 
 export const alumniInfo: { id: number, name: string, designation: string, contact?: string }[] = [

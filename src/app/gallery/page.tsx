@@ -4,6 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import GalleryCard from "../components/GalleryCard";
 import { imageInfo } from "@/data/hostelData";
 import Footer from "../components/Footer";
+import { StaticImageData } from "next/image";
 
 const Gallery = () => {
   useEffect(() => {
@@ -58,7 +59,7 @@ const Gallery = () => {
               <Row>
                 {imageInfo.map(
                   (
-                    info: { id: number; link: string; desc: string },
+                    info: { id: number; src: StaticImageData; desc: string },
                     i: number
                   ) => {
                     return (

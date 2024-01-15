@@ -7,11 +7,10 @@ const GalleryCard = ({ info }: any) => {
   return (
     <Fade left duration={2000}>
       <Card className="card-lift--hover shadow mt-4">
-        <CardBody>
-          <h1>{info.id}</h1>
-          <Image href={info.link} alt="Image"></Image>
+        <CardBody style={{"margin":"5px auto"}}>
+          <Image src={info.src} alt="Image" height={450} width={450}></Image>
         </CardBody>
-        <CardFooter>{info.desc}</CardFooter>
+        <CardFooter style={{"margin":"0px auto"}}>{info.desc}</CardFooter>
       </Card>
     </Fade>
   );
