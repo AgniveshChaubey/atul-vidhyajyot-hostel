@@ -1,4 +1,5 @@
 import { Card, CardBody, Col } from "reactstrap";
+// @ts-ignore
 import Fade from "react-reveal/Fade";
 
 const FacilityCard = ({ facility }: any) => {

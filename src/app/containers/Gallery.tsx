@@ -16,7 +16,7 @@ const Gallery = () => {
       <h1 className="h1">Gallery</h1>
 
       <Row className="my-5">
-        <Col lg="6" className="order-1 order-lg-2" >
+        <Col lg="6" className="order-1 order-lg-2">
           <Fade right duration={2000}>
             <GeneralCarousel items={generalCarouselPhotos} />
           </Fade>

@@ -20,7 +20,7 @@ function MyAccordion({ faqData }: any) {
     <div>
       <Accordion open={open} toggle={toggle}>
         {faqData.map((faq: any, i: number) => (
-          <AccordionItem>
+          <AccordionItem key={i}>
             <AccordionHeader targetId={`${i}`}>
               <i>{faq.question}</i>
             </AccordionHeader>
