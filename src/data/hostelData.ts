@@ -29,7 +29,7 @@ export const facilities: string[] = [
 
 export const quickLinks: string[] = [
     "Home",
-    "About us",
+    "About Us",
     "Admission Process",
     "Rules",
     "Gallery",

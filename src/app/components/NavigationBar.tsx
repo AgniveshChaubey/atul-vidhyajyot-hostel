@@ -36,11 +36,6 @@ const NavigationBar = () => {
           id="navbar-main"
         >
           <Container>
-            <NavbarBrand href="/" className="mr-lg-5">
-              <h2 className="text-white" id="nav-title">
-                {greetings.name}
-              </h2>
-            </NavbarBrand>
             <button
               className="navbar-toggler"
               aria-label="navbar_toggle"
@@ -55,6 +50,11 @@ const NavigationBar = () => {
               onExiting={onExiting}
               onExited={onExited}
             >
+              <NavbarBrand href="/" className="mr-lg-5 mt-1">
+                <h2 className="text-white" id="nav-title">
+                  {greetings.name}
+                </h2>
+              </NavbarBrand>
               <div className="navbar-collapse-header">
                 <Row>
                   <Col className="collapse-brand" xs="6">
@@ -63,25 +63,26 @@ const NavigationBar = () => {
                     </h3>
                   </Col>
                   <Col className="collapse-close" xs="6">
-                    <button className="navbar-toggler" id="navbar_global">
-                    </button>
+                    <button
+                      className="navbar-toggler"
+                      id="navbar_global"
+                    ></button>
                   </Col>
                 </Row>
               </div>
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                {/* {quickLinks.map((each) => (
-                  <NavItem key={each}>
+                {quickLinks.map((each, index) => (
+                  <NavItem key={index}>
                     <NavLink
                       rel="noopener"
                       aria-label={`${urlString(each)}`}
                       className="nav-link-icon"
                       href={urlString(each)}
-                      target="_blank"
                     >
                       {each}
                     </NavLink>
                   </NavItem>
-                ))} */}
+                ))}
               </Nav>
             </UncontrolledCollapse>
           </Container>

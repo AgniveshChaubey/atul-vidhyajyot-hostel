@@ -25,22 +25,29 @@ const Greetings = () => {
             <span />
             <span />
           </div>
-          <Container className="py-lg-md d-flex">
+          <Container className="py-lg-md d-flex mt-3">
             <div className="col px-0">
               <Row>
                 <Col lg="6">
                   <h1 className="display-3 text-white">
                     {greetings.greet + " "}
                   </h1>
-                  <h1 className="lead text-white" style={{textAlign:"justify"}}>{greetings.description}</h1>
-                  {/* <SocialLinks /> */}
+                  <h1
+                    className="lead text-white"
+                    style={{ textAlign: "justify" }}
+                  >
+                    {greetings.description}
+                  </h1>
                 </Col>
                 <Col lg="5" className="ml-2">
                   <Image
-                    className="mx-auto d-block mb-2 p-3"
+                    className="mx-auto d-block mb-2 p-3 mt-3"
                     src={hostelImg}
                     alt="Hostel Home"
-                    style={{border:"2px solid black", backgroundColor: "white" }}
+                    style={{
+                      border: "2px solid black",
+                      backgroundColor: "white",
+                    }}
                     width={500}
                     height={500}
                   />
