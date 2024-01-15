@@ -75,9 +75,9 @@ const NavigationBar = () => {
                   <NavItem key={index}>
                     <NavLink
                       rel="noopener"
-                      aria-label={`${urlString(each)}`}
+                      aria-label={`/${urlString(each)}`}
                       className="nav-link-icon"
-                      href={urlString(each)}
+                      href={`/${urlString(each)}`}
                     >
                       {each}
                     </NavLink>

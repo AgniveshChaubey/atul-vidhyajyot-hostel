@@ -3,7 +3,6 @@ import Link from "next/link";
 import { quickLinks, urlString } from "@/data/hostelData";
 
 const Footer = ({ value }: any) => {
-  console.log(value);
   return (
     <Card
       className={`section-lg bg-gradient-${

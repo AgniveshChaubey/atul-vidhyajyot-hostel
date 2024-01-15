@@ -8,7 +8,6 @@ import "../styles/styles.css";
 import "../styles/vendor/font-awesome/css/font-awesome.min.css";
 import "../styles/vendor/nucleo/css/nucleo.css";
 import NavigationBar from "./components/NavigationBar";
-import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 

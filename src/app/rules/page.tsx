@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { hostelRules, hostelRulesGuj } from "@/data/hostelData";
 import { useEffect } from "react";
@@ -60,8 +61,8 @@ const Rules = () => {
                             }}
                           />
                           <ul className="ml-4">
-                            {hostelRulesGuj.map((rule) => (
-                              <li>{rule}</li>
+                            {hostelRulesGuj.map((rule, index) => (
+                              <li key={index}>{rule}</li>
                             ))}
                           </ul>
                           <hr
@@ -78,8 +79,8 @@ const Rules = () => {
                               listStyleType: "square",
                             }}
                           >
-                            {hostelRules.map((rule) => (
-                              <li>{rule}</li>
+                            {hostelRules.map((rule, index) => (
+                              <li key={index}>{rule}</li>
                             ))}
                           </ul>
                         </h5>

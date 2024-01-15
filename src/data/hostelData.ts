@@ -46,18 +46,22 @@ export const generalCarouselPhotos = [
     {
         src: "https://raw.githubusercontent.com/AgniveshChaubey/atul-vidhyajyot-hostel/master/public/g1.jpg",
         altText: "Slide 1",
+        caption: ""
     },
     {
         src: "https://raw.githubusercontent.com/AgniveshChaubey/atul-vidhyajyot-hostel/master/public/g2.jpg",
         altText: "Slide 2",
+        caption: ""
     },
     {
         src: "https://raw.githubusercontent.com/AgniveshChaubey/atul-vidhyajyot-hostel/master/public/g3.jpg",
         altText: "Slide 3",
+        caption: ""
     },
     {
         src: "https://raw.githubusercontent.com/AgniveshChaubey/atul-vidhyajyot-hostel/master/public/g4.jpg",
         altText: "Slide 4",
+        caption: ""
     },
 
 ];
