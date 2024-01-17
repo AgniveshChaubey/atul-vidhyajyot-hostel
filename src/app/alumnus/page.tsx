@@ -49,7 +49,7 @@ const AdmissionProcess = () => {
                         who once called our hostel home. Many of our former
                         residents have gone on to hold significant and esteemed
                         positions. Get to know our talented alumni community and
-                        the impact they've made in various fields.
+                        the impact they have made in various fields.
                       </h5>
                     </div>
                   </div>
