@@ -7,18 +7,21 @@ import { Col, Container, Row } from "reactstrap";
 import general from "../../public/lottie/general.json";
 import functions from "../../public/lottie/functions.json";
 import GeneralCarousel from "../components/GeneralCarousel";
-import { functionCarouselPhotos, generalCarouselPhotos } from "@/data/hostelData";
+import {
+  functionCarouselPhotos,
+  generalCarouselPhotos,
+} from "@/data/hostelData";
+import { homeData } from "@/data/homeData";
 
-import me from "./me.png";
 const Gallery = () => {
   return (
     <Container className="text-center my-5 section section-lg">
-      <h1 className="h1">Gallery</h1>
+      <h1 className="h1">{homeData.gallery.title}</h1>
 
       <Row className="my-5">
         <Col lg="6" className="order-1 order-lg-2">
           <Fade right duration={2000}>
-            <GeneralCarousel items={generalCarouselPhotos} />
+            <GeneralCarousel items={homeData.gallery.generalCarouselPhotos} />
           </Fade>
         </Col>
         <Col lg="6" className="order-2 order-lg-1">
@@ -36,7 +39,7 @@ const Gallery = () => {
       <Row className="my-5">
         <Col lg="6" className="order-2 order-lg-1">
           <Fade right duration={2000}>
-            <GeneralCarousel items={functionCarouselPhotos} />
+            <GeneralCarousel items={homeData.gallery.functionCarouselPhotos} />
           </Fade>
         </Col>
         <Col lg="6" className="order-1 order-lg-2">

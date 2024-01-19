@@ -1,9 +1,7 @@
 import { Container, Row, Col } from "reactstrap";
+import { homeData } from "@/data/homeData";
 
 const GoogleMap = () => {
-  const mapUrl =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.568690535363!2d72.91913507475674!3d22.557824133512703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e0d3761116d%3A0x226f9e786735dc9b!2sAtul%20VidhyaJyot!5e0!3m2!1sen!2sin!4v1703742994116!5m2!1sen!2sin";
-
   return (
     <main>
       <div className="position-relative">
@@ -23,9 +21,11 @@ const GoogleMap = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="12">
-                  <h1 className="display-3 text-white pb-5">Location</h1>
+                  <h1 className="display-3 text-white pb-5">
+                    {homeData.location.title}
+                  </h1>
                   <iframe
-                    src={mapUrl}
+                    src={homeData.location.mapUrl}
                     width="100%"
                     height="450"
                     style={{

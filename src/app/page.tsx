@@ -1,9 +1,9 @@
 "use client";
-import Greetings from "./containers/Greetings";
-import GoogleMap from "./containers/Location";
-import Gallery from "./containers/Gallery";
-import Facilities from "./containers/Facilities";
-import QuickLinks from "./components/ExploreMore";
+import Greetings from "./homePage/Greetings";
+import GoogleMap from "./homePage/Location";
+import Gallery from "./homePage/Gallery";
+import Facilities from "./homePage/Facilities";
+import QuickLinks from "./homePage/ExploreMore";
 import Footer from "./components/Footer";
 
 const Home = () => {

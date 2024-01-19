@@ -1,6 +1,7 @@
 import { facilities } from "../../data/hostelData";
 import { Container, Row } from "reactstrap";
 import FacilityCard from "@/app/components/FacilityCard";
+import { homeData } from "@/data/homeData";
 
 const Facilities = () => {
   return (
@@ -14,11 +15,13 @@ const Facilities = () => {
               </div>
             </div>
             <div className="pl-4">
-              <h4 className="display-3 text-info">Facilities</h4>
+              <h4 className="display-3 text-info">
+                {homeData.facilities.title}
+              </h4>
             </div>
           </div>
           <Row className="row-grid align-items-center">
-            {facilities.map((facility, i) => {
+            {homeData.facilities.facilityList.map((facility, i) => {
               return <FacilityCard key={i} facility={facility} />;
             })}
           </Row>

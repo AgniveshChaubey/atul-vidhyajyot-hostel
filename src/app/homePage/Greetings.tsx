@@ -3,6 +3,7 @@ import Image from "next/image";
 import { greetings } from "@/data/hostelData";
 import { Container, Row, Col } from "reactstrap";
 import hostelImg from "@/public/images/hostelHomepage.jpg";
+import { homeData } from "@/data/homeData";
 
 const Greetings = () => {
   useEffect(() => {
@@ -29,20 +30,17 @@ const Greetings = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="6">
-                  <h1 className="display-3 text-white">
-                    {greetings.greet + " "}
-                  </h1>
                   <h1
                     className="lead text-white"
                     style={{ textAlign: "justify" }}
                   >
-                    {greetings.description}
+                    {homeData.greetings.greet}
                   </h1>
                 </Col>
                 <Col lg="5" className="ml-2">
                   <Image
                     className="mx-auto d-block mb-2 p-3 mt-3"
-                    src={hostelImg}
+                    src={homeData.greetings.hostelImg}
                     alt="Hostel Home"
                     style={{
                       border: "2px solid black",
@@ -69,7 +67,6 @@ const Greetings = () => {
             </svg>
           </div>
         </section>
-        {/* 1st Hero Variation */}
       </div>
     </main>
   );
