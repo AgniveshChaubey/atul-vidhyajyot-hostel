@@ -7,7 +7,7 @@ import { Col, Container, Row } from "reactstrap";
 import general from "../../public/lottie/general.json";
 import functions from "../../public/lottie/functions.json";
 import GeneralCarousel from "../components/GeneralCarousel";
-import { functionPhotos, generalCarouselPhotos } from "@/data/hostelData";
+import { functionCarouselPhotos, generalCarouselPhotos } from "@/data/hostelData";
 
 import me from "./me.png";
 const Gallery = () => {
@@ -36,7 +36,7 @@ const Gallery = () => {
       <Row className="my-5">
         <Col lg="6" className="order-2 order-lg-1">
           <Fade right duration={2000}>
-            <GeneralCarousel items={generalCarouselPhotos} />
+            <GeneralCarousel items={functionCarouselPhotos} />
           </Fade>
         </Col>
         <Col lg="6" className="order-1 order-lg-2">
