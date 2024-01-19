@@ -1,5 +1,4 @@
 "use client";
-import { hostelRules, hostelRulesGuj } from "@/data/hostelData";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Footer from "../components/Footer";
@@ -31,9 +30,9 @@ const Rules = () => {
               <Row>
                 <Col lg="12">
                   <div className="text-white" style={{ textAlign: "justify" }}>
-                    <h2 className="display-4 text-white">
+                    <div className="display-4">
                       {rulesData.pageHeader}
-                    </h2>
+                    </div>
                     <p>{rulesData.headerText}</p>
                     <p>
                       <p className="p-2 text-yellow">

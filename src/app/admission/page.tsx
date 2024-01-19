@@ -30,9 +30,9 @@ const AdmissionProcess = () => {
               <Row>
                 <Col lg="12">
                   <div className="text-white" style={{ textAlign: "justify" }}>
-                    <h2 className="display-4 text-white">
+                    <div className="display-4">
                       {admissionData.pageHeader}
-                    </h2>
+                    </div>
                     {admissionData.details.map((details, index) => (
                       <p key={index}>{details}</p>
                     ))}

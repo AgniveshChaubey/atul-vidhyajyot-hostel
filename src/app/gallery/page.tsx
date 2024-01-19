@@ -5,6 +5,7 @@ import GalleryCard from "../components/GalleryCard";
 import { imageInfo } from "@/data/hostelData";
 import Footer from "../components/Footer";
 import { StaticImageData } from "next/image";
+import { galleryData } from "@/data/galleryData";
 
 const Gallery = () => {
   useEffect(() => {
@@ -31,44 +32,29 @@ const Gallery = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="12">
-                  <div className="d-flex p-4">
-                    <div>
-                      <div className="icon icon-md icon-shape bg-gradient-white shadow rounded-circle text-info">
-                        <i className="ni ni-laptop text-info" />
-                      </div>
-                    </div>
-                    <div className="pl-4">
-                      <h2 className="display-3 text-white">Gallery</h2>
-                      <h1
-                        className="lead text-white"
-                        style={{ textAlign: "justify" }}
-                      >
-                        Welcome to Our Hostel Gallery: A Visual Journey of
-                        Vibrant Memories. Step into the heart of our hostel
-                        through captivating images that tell stories of
-                        camaraderie, laughter, and shared experiences. Explore
-                        the beauty of our spaces, the warmth of friendships, and
-                        the unique moments that make our hostel a home. Join us
-                        on a visual tour that celebrates the vibrant spirit of
-                        our community.
-                      </h1>
-                    </div>
+                  <div className="text-white" style={{ textAlign: "justify" }}>
+                    <div className="display-4">{galleryData.galleryHeader}</div>
+                    <p>{galleryData.headerText}</p>
                   </div>
                 </Col>
               </Row>
               <Row>
-                {imageInfo.map(
-                  (
-                    info: { id: number; src: StaticImageData; desc: string },
-                    i: number
-                  ) => {
-                    return (
-                      <Col className="order-lg-1" lg="6" key={i}>
-                        <GalleryCard info={info} />
-                      </Col>
-                    );
-                  }
-                )}
+                {galleryData.images.functionImg.map((img, i) => {
+                  return (
+                    <Col lg="6" key={i}>
+                      <GalleryCard info={img} />
+                    </Col>
+                  );
+                })}
+              </Row>
+              <Row>
+                {galleryData.images.hostelImg.map((img, i) => {
+                  return (
+                    <Col lg="6" key={i}>
+                      <GalleryCard info={img} />
+                    </Col>
+                  );
+                })}
               </Row>
             </div>
           </Container>
