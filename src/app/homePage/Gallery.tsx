@@ -2,15 +2,10 @@
 import Lottie from "react-lottie";
 // @ts-ignore
 import Fade from "react-reveal/Fade";
-import Image from "next/image";
 import { Col, Container, Row } from "reactstrap";
 import general from "../../public/lottie/general.json";
 import functions from "../../public/lottie/functions.json";
 import GeneralCarousel from "../components/GeneralCarousel";
-import {
-  functionCarouselPhotos,
-  generalCarouselPhotos,
-} from "@/data/hostelData";
 import { homeData } from "@/data/homeData";
 
 const Gallery = () => {

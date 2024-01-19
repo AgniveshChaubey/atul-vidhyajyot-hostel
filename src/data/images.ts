@@ -31,5 +31,5 @@ import f10 from "@/public/images/functions/f10.jpg";
 import f11 from "@/public/images/functions/f11.jpg";
 import f12 from "@/public/images/functions/f12.jpg";
 
-export { one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen }
-export { f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12 }
+export { one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen };
+export { f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12 };

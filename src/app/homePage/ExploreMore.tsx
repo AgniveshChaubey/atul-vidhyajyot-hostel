@@ -1,7 +1,5 @@
 import { FaSquareArrowUpRight } from "react-icons/fa6";
-import { Container, Row, Card, CardBody, Col, Button } from "reactstrap";
-// @ts-ignore
-import Fade from "react-reveal/Fade";
+import { Container, Row, Card, CardBody, Col } from "reactstrap";
 import Link from "next/link";
 import { homeData } from "@/data/homeData";
 
@@ -22,29 +20,27 @@ const ExploreMore = () => {
         <Row className="row-grid align-items-center">
           {homeData.explore.links.map((link, i) => (
             <Col lg="6" key={i}>
-              <Fade bottom duration={2000}>
-                <Card
-                  className="shadow-lg--hover shadow mt-4"
+              <Card
+                className="shadow-lg--hover shadow mt-4"
+                style={{ borderRadius: "20px" }}
+              >
+                <CardBody
+                  className="bg-gradient-info"
                   style={{ borderRadius: "20px" }}
                 >
-                  <CardBody
-                    className="bg-gradient-info"
-                    style={{ borderRadius: "20px" }}
-                  >
-                    <Link href={link === "Home" ? "/" : link.toLowerCase()}>
-                      <div className="d-flex px-3 justify-content-center ">
-                        <div className="">
-                          <h4 className="text-white">
-                            {" "}
-                            <strong className="mr-2">{link}</strong>{" "}
-                            <FaSquareArrowUpRight />
-                          </h4>
-                        </div>
+                  <Link href={link === "Home" ? "/" : link.toLowerCase()}>
+                    <div className="d-flex px-3 justify-content-center ">
+                      <div className="">
+                        <h4 className="text-white">
+                          {" "}
+                          <strong className="mr-2">{link}</strong>{" "}
+                          <FaSquareArrowUpRight />
+                        </h4>
                       </div>
-                    </Link>
-                  </CardBody>
-                </Card>
-              </Fade>
+                    </div>
+                  </Link>
+                </CardBody>
+              </Card>
             </Col>
           ))}
         </Row>

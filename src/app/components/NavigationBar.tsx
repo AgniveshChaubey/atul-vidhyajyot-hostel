@@ -1,18 +1,17 @@
 "use client";
 import { useState, useEffect } from "react";
-import { greetings } from "../../data/hostelData";
 // @ts-ignore
 import Headroom from "headroom.js";
 import {
-  UncontrolledCollapse,
-  NavbarBrand,
   Navbar,
-  NavLink,
+  NavbarBrand,
   Nav,
+  NavItem,
+  NavLink,
+  UncontrolledCollapse,
   Container,
   Row,
   Col,
-  NavItem,
 } from "reactstrap";
 import { quickLinks, urlString } from "../../data/hostelData";
 
@@ -35,7 +34,12 @@ const NavigationBar = () => {
           expand="lg"
           id="navbar-main"
         >
-          <Container>
+          <Container className="d-flex justify-content-between">
+            <NavbarBrand href="/" className="mr-lg-5 mt-1">
+              <h2 className="text-white" id="nav-title">
+                Atul Vidhyajyot
+              </h2>
+            </NavbarBrand>
             <button
               className="navbar-toggler"
               aria-label="navbar_toggle"
@@ -50,23 +54,19 @@ const NavigationBar = () => {
               onExiting={onExiting}
               onExited={onExited}
             >
-              <NavbarBrand href="/" className="mr-lg-5 mt-1">
-                <h2 className="text-white" id="nav-title">
-                  {greetings.name}
-                </h2>
-              </NavbarBrand>
               <div className="navbar-collapse-header">
                 <Row>
                   <Col className="collapse-brand" xs="6">
                     <h3 className="text-black" id="nav-title">
-                      {greetings.name}
+                      Atul Vidhyajyot
                     </h3>
                   </Col>
                   <Col className="collapse-close" xs="6">
-                    <button
-                      className="navbar-toggler"
-                      id="navbar_global"
-                    ></button>
+                    <button className="navbar-toggler" id="navbar_global">
+                      {" "}
+                      <span />
+                      <span />
+                    </button>
                   </Col>
                 </Row>
               </div>
