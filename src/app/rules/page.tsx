@@ -1,9 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { hostelRules, hostelRulesGuj } from "@/data/hostelData";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Footer from "../components/Footer";
+import { rulesData } from "@/data/rulesData";
 
 const Rules = () => {
   useEffect(() => {
@@ -30,62 +30,40 @@ const Rules = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="12">
-                  <div className="d-flex p-4">
-                    <div>
-                      <div className="icon icon-md icon-shape bg-gradient-white shadow rounded-circle text-info">
-                        <i className="ni ni-laptop text-info" />
-                      </div>
-                    </div>
-                    <div className="pl-4">
-                      <h2 className="display-3 text-white">
-                        Rules and Regulations
-                        <h5
-                          className="lead text-white"
-                          style={{ textAlign: "justify" }}
-                        >
-                          Welcome to our Hostel Rules and Regulations Page!
-                          Here, we've laid out some simple guidelines to ensure
-                          everyone enjoys a safe and supportive stay. These
-                          rules are designed to create a positive environment
-                          for all students, fostering a bright and successful
-                          future. Let's make our hostel a place where everyone
-                          can thrive!
-                          <p className="p-2 text-yellow">
-                            <i>Note: Rules are mandatory to follow!</i>
-                          </p>
-                          <hr
-                            style={{
-                              height: "2px",
-                              backgroundColor: "black",
-                              margin: "20px",
-                            }}
-                          />
-                          <ul className="ml-4">
-                            {hostelRulesGuj.map((rule, index) => (
-                              <li key={index}>{rule}</li>
-                            ))}
-                          </ul>
-                          <hr
-                            style={{
-                              height: "2px",
-                              backgroundColor: "black",
-                              margin: "20px",
-                            }}
-                          />
-                          <ul
-                            className="ml-4"
-                            style={{
-                              textAlign: "justify",
-                              listStyleType: "square",
-                            }}
-                          >
-                            {hostelRules.map((rule, index) => (
-                              <li key={index}>{rule}</li>
-                            ))}
-                          </ul>
-                        </h5>
-                      </h2>
-                    </div>
+                  <div className="text-white" style={{ textAlign: "justify" }}>
+                    <h2 className="display-4 text-white">
+                      {rulesData.pageHeader}
+                    </h2>
+                    <p>{rulesData.headerText}</p>
+                    <p>
+                      <p className="p-2 text-yellow">
+                        <i>{rulesData.note}</i>
+                      </p>
+                      <hr
+                        style={{
+                          height: "2px",
+                          backgroundColor: "black",
+                          margin: "20px",
+                        }}
+                      />
+                      <ul className="ml-4">
+                        {rulesData.rules.gujarati.map((rule, index) => (
+                          <li key={index}>{rule}</li>
+                        ))}
+                      </ul>
+                      <hr
+                        style={{
+                          height: "2px",
+                          backgroundColor: "black",
+                          margin: "20px",
+                        }}
+                      />
+                      <ul className="ml-4" style={{ listStyleType: "square" }}>
+                        {rulesData.rules.english.map((rule, index) => (
+                          <li key={index}>{rule}</li>
+                        ))}
+                      </ul>
+                    </p>
                   </div>
                 </Col>
               </Row>
