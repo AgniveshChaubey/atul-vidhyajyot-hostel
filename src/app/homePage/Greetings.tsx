@@ -19,16 +19,16 @@ const Greetings = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="6">
-                  <h1
-                    className="lead text-white"
+                  <p
+                    className="lead text-white text-on-mobile"
                     style={{ textAlign: "justify" }}
                   >
                     {homeData.greetings.greet}
-                  </h1>
+                  </p>
                 </Col>
-                <Col lg="5" className="ml-2">
+                <Col lg="5">
                   <Image
-                    className="mx-auto d-block mb-2 p-3 mt-3"
+                    className="mb-2 p-3 mt-3 img-responsive"
                     src={homeData.greetings.hostelImg}
                     alt="Hostel Home"
                     style={{

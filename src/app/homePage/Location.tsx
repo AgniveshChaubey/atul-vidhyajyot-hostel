@@ -12,9 +12,9 @@ const GoogleMap = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="12">
-                  <h1 className="display-3 text-white pb-5">
+                  <div className="display-3 text-white pb-5">
                     {homeData.location.title}
-                  </h1>
+                  </div>
                   <iframe
                     src={homeData.location.mapUrl}
                     width="100%"

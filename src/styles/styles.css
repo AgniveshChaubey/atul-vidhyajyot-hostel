@@ -7,3 +7,29 @@ body > div:first-child {
   font-weight: 400;
   font-style: normal;
 }
+
+@media (max-width: 767px) {
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-on-mobile {
+    font-size: 16px;
+  }
+
+  .small-body {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    margin-top: 5px;
+  }
+  .small-height {
+    height: 35px;
+    font-size: 16px;
+  }
+  .card-body {
+    height: 40px;
+    padding-top: 5px;
+  }
+}
