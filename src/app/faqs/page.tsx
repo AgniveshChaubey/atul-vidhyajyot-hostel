@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import MyAccordion from "../components/Accordion";
 import Footer from "../components/Footer";
 import { faqData } from "@/data/faqData";
-import BackgroundDesign from "../components/backgroundDesign";
+import BackgroundDesign from "../components/BackgroundDesign";
 
 const FAQs = () => {
   useEffect(() => {

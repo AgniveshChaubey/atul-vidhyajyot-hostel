@@ -2,7 +2,7 @@ import { Card, CardBody, Col } from "reactstrap";
 // @ts-ignore
 import Fade from "react-reveal/Fade";
 
-const FacilityCard = ({ facility }: any) => {
+const FacilityCard = ({ facility }: { facility: string }) => {
   return (
     <Col lg="6">
       <Fade bottom duration={2000}>

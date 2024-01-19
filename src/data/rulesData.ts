@@ -1,13 +1,4 @@
-interface RulesData {
-    pageHeader: string,
-    headerText: string,
-    note: string,
-    rules: {
-        gujarati: string[],
-        english: string[]
-    }
-
-}
+import { RulesData } from "@/types/type";
 
 export const rulesData: RulesData = {
     pageHeader: "Rules and Regulations",

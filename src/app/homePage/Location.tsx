@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "reactstrap";
 import { homeData } from "@/data/homeData";
-import BackgroundDesign from "../components/backgroundDesign";
+import BackgroundDesign from "../components/BackgroundDesign";
 
 const GoogleMap = () => {
   return (

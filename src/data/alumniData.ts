@@ -1,14 +1,4 @@
-
-interface AlumniData {
-    alumniHeader: string,
-    headerText: string,
-    info: {
-        id: number,
-        name: string,
-        designation: string,
-        contact?: string
-    }[]
-}
+import { AlumniData } from "@/types/type";
 
 export const alumniData: AlumniData = {
     alumniHeader: "Alumni",

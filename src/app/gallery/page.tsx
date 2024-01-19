@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import GalleryCard from "../components/GalleryCard";
 import Footer from "../components/Footer";
 import { galleryData } from "@/data/galleryData";
-import BackgroundDesign from "../components/backgroundDesign";
+import BackgroundDesign from "../components/BackgroundDesign";
 
 const Gallery = () => {
   useEffect(() => {

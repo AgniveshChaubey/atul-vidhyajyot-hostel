@@ -1,7 +1,7 @@
 import { Card, CardBody, CardFooter } from "reactstrap";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-const GalleryCard = ({ info }: any) => {
+const GalleryCard = ({ info }: { info: { src: StaticImageData; desc: string } }) => {
   return (
     <Card className="card-lift--hover shadow mt-4">
       <CardBody style={{ margin: "5px auto" }}>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { urlString } from "@/data/helperFunctions";
 import { footerData } from "@/data/footerData";
 
-const Footer = ({ value }: any) => {
+const Footer = ({ value }: { value: string }) => {
   return (
     <>
       <Card

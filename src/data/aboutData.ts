@@ -1,8 +1,4 @@
-interface AboutData {
-    header: string,
-    briefInfo: string[],
-    details: string[]
-}
+import { AboutData } from "@/types/type";
 
 export const aboutData: AboutData[] = [
     {

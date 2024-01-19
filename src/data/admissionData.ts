@@ -1,11 +1,4 @@
-interface AdmissionData {
-    pageHeader: string,
-    details: string[],
-    alert: {
-        text: string, data: string[]
-    },
-    form: { formHead: string, formLink: string }
-}
+import { AdmissionData } from "@/types/type";
 
 export const admissionData: AdmissionData = {
     pageHeader: "Admission Process",

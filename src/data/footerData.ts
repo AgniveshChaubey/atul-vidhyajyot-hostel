@@ -1,17 +1,5 @@
+import { FooterData } from "@/types/type";
 import { homeData } from "./homeData"
-
-
-interface FooterData {
-    contact: {
-        title: string,
-        mobile: string,
-        email: string
-    },
-    quickLinks: {
-        title: string,
-        links: string[]
-    }
-}
 
 export const footerData: FooterData = {
     contact: {

@@ -1,21 +1,6 @@
-import { StaticImageData } from "next/image";
+import { GalleryData } from "@/types/type";
 import { one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen } from "./images";
 import { f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12 } from "./images";
-
-interface GalleryData {
-    galleryHeader: string,
-    headerText: string,
-    images: {
-        hostelImg: Image[],
-        functionImg: Image[]
-    }
-}
-
-interface Image {
-    id: number,
-    src: StaticImageData,
-    desc: string
-}
 
 export const galleryData: GalleryData = {
     galleryHeader: "Gallery",

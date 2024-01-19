@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import { Card, CardBody, CardFooter } from "reactstrap";
 import Footer from "../components/Footer";
 import { alumniData } from "@/data/alumniData";
-import BackgroundDesign from "../components/backgroundDesign";
+import BackgroundDesign from "../components/BackgroundDesign";
 
 const AdmissionProcess = () => {
   useEffect(() => {

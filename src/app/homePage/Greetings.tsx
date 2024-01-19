@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
 import { homeData } from "@/data/homeData";
-import BackgroundDesign from "../components/backgroundDesign";
+import BackgroundDesign from "../components/BackgroundDesign";
 
 const Greetings = () => {
   useEffect(() => {

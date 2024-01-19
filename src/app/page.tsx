@@ -14,7 +14,7 @@ const Home = () => {
       <GoogleMap />
       <Facilities />
       <QuickLinks />
-      <Footer />
+      <Footer value="no" />
     </>
   );
 };

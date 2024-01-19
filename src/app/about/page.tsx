@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Footer from "../components/Footer";
 import { aboutData } from "@/data/aboutData";
-import BackgroundDesign from "../components/backgroundDesign";
+import BackgroundDesign from "../components/BackgroundDesign";
 
 const AboutUs = () => {
   useEffect(() => {

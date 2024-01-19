@@ -6,7 +6,14 @@ import {
   AccordionItem,
 } from "reactstrap";
 
-function MyAccordion({ faqData }: any) {
+function MyAccordion({
+  faqData,
+}: {
+  faqData: {
+    question: string;
+    answer: string;
+  }[];
+}) {
   const [open, setOpen] = useState("0");
   const toggle = (id: any) => {
     if (open === id) {
@@ -19,7 +26,7 @@ function MyAccordion({ faqData }: any) {
   return (
     <div>
       <Accordion open={open} toggle={toggle}>
-        {faqData.map((faq: any, i: number) => (
+        {faqData.map((faq, i) => (
           <AccordionItem key={i}>
             <AccordionHeader targetId={`${i}`}>
               <i>{faq.question}</i>

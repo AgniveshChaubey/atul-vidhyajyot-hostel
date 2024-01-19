@@ -1,36 +1,5 @@
+import { HomeData } from "@/types/type";
 import hostelImg from "@/public/images/hostelHomepage.jpg";
-import { StaticImageData } from "next/image";
-
-interface HomeData {
-    greetings: {
-        greet: string,
-        hostelImg: StaticImageData,
-    },
-    gallery: {
-        title: string,
-        generalCarouselPhotos: Image[],
-        functionCarouselPhotos: Image[],
-
-    },
-    location: {
-        title: string,
-        mapUrl: string
-    },
-    facilities: {
-        title: string,
-        facilityList: string[]
-    }, explore: {
-        title: string,
-        links: string[]
-    }
-
-}
-
-interface Image {
-    src: string,
-    altText: string,
-    caption: string
-}
 
 export const homeData: HomeData = {
     greetings: {

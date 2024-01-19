@@ -1,12 +1,4 @@
-
-interface FaqData {
-    faqHeader: string,
-    headerText: string,
-    faqData: {
-        question: string;
-        answer: string;
-    }[]
-}
+import { FaqData } from "@/types/type";
 
 export const faqData: FaqData = {
     faqHeader: "Frequently Asked Questions",
