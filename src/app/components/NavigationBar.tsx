@@ -13,7 +13,8 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import { quickLinks, urlString } from "../../data/hostelData";
+import { urlString } from "../../data/helperFunctions";
+import { homeData } from "@/data/homeData";
 
 const NavigationBar = () => {
   const [collapseClasses, setCollapseClasses] = useState("");
@@ -71,7 +72,7 @@ const NavigationBar = () => {
                 </Row>
               </div>
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                {quickLinks.map((each, index) => (
+                {homeData.explore.links.map((each, index) => (
                   <NavItem key={index}>
                     <NavLink
                       rel="noopener"

@@ -1,11 +1,10 @@
-import { facilities } from "../../data/hostelData";
 import { Container, Row } from "reactstrap";
 import FacilityCard from "@/app/components/FacilityCard";
 import { homeData } from "@/data/homeData";
 
 const Facilities = () => {
   return (
-    facilities && (
+    homeData.facilities && (
       <section className="section section-lg pt-0">
         <Container>
           <div className="d-flex p-4">

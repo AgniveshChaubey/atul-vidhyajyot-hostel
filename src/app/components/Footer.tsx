@@ -1,6 +1,7 @@
 import { Card, Col, Row, Container } from "reactstrap";
 import Link from "next/link";
-import { quickLinks, urlString } from "@/data/hostelData";
+import { urlString } from "@/data/helperFunctions";
+import { footerData } from "@/data/footerData";
 
 const Footer = ({ value }: any) => {
   return (
@@ -15,14 +16,16 @@ const Footer = ({ value }: any) => {
             <Row className={`text-${value === "yes" ? "info" : "white"}`}>
               <Col className="order-lg-2" lg="4"></Col>
               <Col lg="6" sm="6" className="order-lg-1">
-                <h2>Contact us!</h2>
-                <p>Mobile No. +91 7621847331 (Siddhrajsinh Solanki)</p>
-                <p>Email: Siddharajsinhsolanki988@gmail.com</p>
+                <h2>{footerData.contact.title}</h2>
+                <p>{footerData.contact.mobile}</p>
+                <p>{footerData.contact.email}</p>
               </Col>
               <Col lg="6" sm="6" className="order-lg-1">
-                <h2 className="justify-content-center">Quick Links</h2>
+                <h2 className="justify-content-center">
+                  {footerData.quickLinks.title}
+                </h2>
                 <ul style={{ color: "white" }}>
-                  {quickLinks.map((each, i) => (
+                  {footerData.quickLinks.links.map((each, i) => (
                     <li key={i}>
                       <Link href={`/${urlString(each)}`}>
                         <i
