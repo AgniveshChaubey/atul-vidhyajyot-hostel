@@ -18,4 +18,18 @@ import seventeen from "@/public/images/general/17-sideyard.jpg";
 import eighteen from "@/public/images/general/18-terrace.jpg";
 import nineteen from "@/public/images/general/19-terrace.jpg";
 
-export {one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen}
+import f1 from "@/public/images/functions/f1.jpg";
+import f2 from "@/public/images/functions/f2.jpg";
+import f3 from "@/public/images/functions/f3.jpg";
+import f4 from "@/public/images/functions/f4.jpg";
+import f5 from "@/public/images/functions/f5.jpg";
+import f6 from "@/public/images/functions/f6.jpg";
+import f7 from "@/public/images/functions/f7.jpg";
+import f8 from "@/public/images/functions/f8.jpg";
+import f9 from "@/public/images/functions/f9.jpg";
+import f10 from "@/public/images/functions/f10.jpg";
+import f11 from "@/public/images/functions/f11.jpg";
+import f12 from "@/public/images/functions/f12.jpg";
+
+export { one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen }
+export { f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12 }

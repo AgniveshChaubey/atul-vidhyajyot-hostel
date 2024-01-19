@@ -41,7 +41,7 @@ const AboutUs = () => {
                     >
                       <h2 className="display-3 text-white">About Us</h2>
                       <h5 className="display-3 text-white">
-                        <u>About Hostel</u>
+                        <u>Hostel</u>
                       </h5>
                       <h5 className="lead text-white">
                         Welcome to Atul vidyajyot Hostel!
@@ -74,7 +74,7 @@ const AboutUs = () => {
                         fit and healthy while continuing their education.
                       </p>
                       <h5 className="display-3 text-white mt-5">
-                        <u>About R. P. Patel (Kaka) - Owner of AVJ Hostel</u>
+                        <u>Owner - Mr. R. P. Patel (Kaka)</u>
                       </h5>
                       <div>
                         <h5 className="text-white">
@@ -89,6 +89,9 @@ const AboutUs = () => {
                         <h5 className="text-white">
                           Son: Atulbhai Ramanbhai Patel, Yogeshbhai Ramanbhai
                           Patel, Kamleshbhai Ramanbhai Patel
+                        </h5>
+                        <h5 className="text-white">
+                          Grandson: Prashantbhai Yogesgbhai Patel
                         </h5>
                         <br />
                         <p>

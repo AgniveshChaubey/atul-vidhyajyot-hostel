@@ -4,8 +4,8 @@ import {
     // @ts-ignore
 } from "./types/sections";
 
-import { one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen } from "./generalImages";
-
+import { one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen } from "./images";
+import { f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12 } from "./images";
 export const greetings: GreetingsType = {
     name: "Atul Vidhyajyot Hostel",
     greet: "Welcome to AVJ!",
@@ -225,7 +225,67 @@ export const imageInfo: { id: number, src: StaticImageData, desc: string }[] = [
         id: 19,
         src: nineteen,
         desc: "Terrace"
-    }
+    },
+    {
+        id: 20,
+        src: f1,
+        desc: "Hyderabad Visit"
+    },
+    {
+        id: 21,
+        src: f2,
+        desc: ""
+    },
+    {
+        id: 22,
+        src: f3,
+        desc: ""
+    },
+    {
+        id: 23,
+        src: f4,
+        desc: ""
+    },
+    {
+        id: 24,
+        src: f5,
+        desc: ""
+    },
+    {
+        id: 25,
+        src: f6,
+        desc: ""
+    },
+    {
+        id: 26,
+        src: f7,
+        desc: ""
+    },
+    {
+        id: 27,
+        src: f8,
+        desc: ""
+    },
+    {
+        id: 28,
+        src: f9,
+        desc: ""
+    },
+    {
+        id: 29,
+        src: f10,
+        desc: ""
+    },
+    {
+        id: 30,
+        src: f11,
+        desc: ""
+    },
+    {
+        id: 31,
+        src: f12,
+        desc: ""
+    },
 ];
 
 export const alumniInfo: { id: number, name: string, designation: string, contact?: string }[] = [
