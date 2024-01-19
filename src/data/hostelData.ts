@@ -29,8 +29,8 @@ export const facilities: string[] = [
 
 export const quickLinks: string[] = [
     "Home",
-    "About Us",
-    "Admission Process",
+    "About",
+    "Admission",
     "Rules",
     "Gallery",
     "Alumnus",
