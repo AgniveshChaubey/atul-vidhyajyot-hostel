@@ -1,11 +1,9 @@
 "use client";
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { alumniInfo } from "@/data/hostelData";
 import { Card, CardBody, CardFooter } from "reactstrap";
-// @ts-ignore
-import Fade from "react-reveal/Fade";
 import Footer from "../components/Footer";
+import { alumniData } from "@/data/alumniData";
 
 const AdmissionProcess = () => {
   useEffect(() => {
@@ -32,54 +30,26 @@ const AdmissionProcess = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="12">
-                  <div className="d-flex p-4">
-                    <div>
-                      <div className="icon icon-md icon-shape bg-gradient-white shadow rounded-circle text-info">
-                        <i className="ni ni-laptop text-info" />
-                      </div>
-                    </div>
-                    <div
-                      className="pl-4 text-white"
-                      style={{ textAlign: "justify" }}
-                    >
-                      <h2 className="display-3 text-white">Alumnus</h2>
-                      <h5 className="lead text-white">
-                        Explore Our Accomplished Alumni: A Proud Legacy of
-                        Success. Discover the inspiring journeys of individuals
-                        who once called our hostel home. Many of our former
-                        residents have gone on to hold significant and esteemed
-                        positions. Get to know our talented alumni community and
-                        the impact they have made in various fields.
-                      </h5>
-                    </div>
+                  <div className="text-white" style={{ textAlign: "justify" }}>
+                    <div className="display-4">{alumniData.alumniHeader}</div>
+        
+                    <p>{alumniData.headerText}</p>
                   </div>
                 </Col>
               </Row>
               <Row>
-                {alumniInfo.map(
-                  (
-                    info: {
-                      id: number;
-                      name: string;
-                      designation: string;
-                      contact?: string;
-                    },
-                    i: number
-                  ) => {
-                    return (
-                      <Col className="order-lg-1" lg="6" key={i}>
-                        <Fade left duration={2000}>
-                          <Card className="card-lift--hover shadow mt-4">
-                            <CardBody>
-                              <h1>{info.id}</h1>
-                            </CardBody>
-                            <CardFooter>{info.designation}</CardFooter>
-                          </Card>
-                        </Fade>
-                      </Col>
-                    );
-                  }
-                )}
+                {alumniData.info.map((info, i) => {
+                  return (
+                    <Col className="order-lg-1" lg="6" key={i}>
+                      <Card className="card-lift--hover shadow mt-4">
+                        <CardBody>
+                          <h1>{info.id}</h1>
+                        </CardBody>
+                        <CardFooter>{info.designation}</CardFooter>
+                      </Card>
+                    </Col>
+                  );
+                })}
               </Row>
             </div>
           </Container>

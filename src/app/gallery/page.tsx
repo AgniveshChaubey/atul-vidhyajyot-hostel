@@ -2,9 +2,7 @@
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import GalleryCard from "../components/GalleryCard";
-import { imageInfo } from "@/data/hostelData";
 import Footer from "../components/Footer";
-import { StaticImageData } from "next/image";
 import { galleryData } from "@/data/galleryData";
 
 const Gallery = () => {

@@ -2,8 +2,8 @@
 import { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import MyAccordion from "../components/Accordion";
-import { faqData } from "@/data/hostelData";
 import Footer from "../components/Footer";
+import { faqData } from "@/data/faqData";
 
 const FAQs = () => {
   useEffect(() => {
@@ -30,23 +30,11 @@ const FAQs = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="12">
-                  <div className="d-flex p-4">
-                    <div>
-                      <div className="icon icon-md icon-shape bg-gradient-white shadow rounded-circle text-info">
-                        <i className="ni ni-laptop text-info" />
-                      </div>
-                    </div>
-                    <div className="pl-4" style={{ minWidth: "80%" }}>
-                      <h2 className="display-3 text-white">
-                        Frequently Asked Questions
-                      </h2>
-                      <p className="lead text-white mb-5">
-                        Got Questions? Find Clear Answers Here! Everything You
-                        Need to Know About Your Hostel Stay in Our Simple and
-                        Helpful Frequently Asked Questions Section.
-                      </p>
-                      <MyAccordion faqData={faqData} />
-                    </div>
+                  <div className="text-white" style={{ textAlign: "justify" }}>
+                    <div className="display-4">{faqData.faqHeader}</div>
+
+                    <p>{faqData.headerText}</p>
+                    <MyAccordion faqData={faqData.faqData} />
                   </div>
                 </Col>
               </Row>
