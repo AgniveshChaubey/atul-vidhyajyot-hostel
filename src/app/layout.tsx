@@ -4,8 +4,6 @@ import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/argon-design-system-react.css";
 import "../styles/styles.css";
-import "../styles/vendor/font-awesome/css/font-awesome.min.css";
-import "../styles/vendor/nucleo/css/nucleo.css";
 import NavigationBar from "./components/NavigationBar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,6 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Anton&family=Climate+Crisis&family=Pacifico&family=Russo+One&display=swap')
+        </style>
+      </head>
       <body className={inter.className}>
         <NavigationBar />
         {children}
