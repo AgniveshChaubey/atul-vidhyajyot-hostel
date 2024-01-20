@@ -23,7 +23,7 @@ const Rules = () => {
                   <div className="text-white" style={{ textAlign: "justify" }}>
                     <div className="display-4">{rulesData.pageHeader}</div>
                     <p>{rulesData.headerText}</p>
-                    <p>
+                    <div>
                       <p className="p-2 text-yellow">
                         <i>{rulesData.note}</i>
                       </p>
@@ -51,7 +51,7 @@ const Rules = () => {
                           <li key={index}>{rule}</li>
                         ))}
                       </ul>
-                    </p>
+                    </div>
                   </div>
                 </Col>
               </Row>

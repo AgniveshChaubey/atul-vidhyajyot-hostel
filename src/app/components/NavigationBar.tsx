@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import Headroom from "headroom.js";
 import {
   Navbar,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
@@ -51,15 +50,10 @@ const NavigationBar = () => {
           id="navbar-main"
         >
           <Container className="d-flex justify-content-between">
-            <Link href="/">
-              <NavbarBrand href="/" className="mr-lg-5 mt-1">
-                <h2
-                  className={`text-white ${russoOne.className}`}
-                  id="nav-title"
-                >
-                  Atul Vidhyajyot
-                </h2>
-              </NavbarBrand>
+            <Link href="/" className="mr-lg-5 mt-1">
+              <h2 className={`text-white ${russoOne.className}`} id="nav-title">
+                Atul Vidhyajyot
+              </h2>
             </Link>
             <button
               className="navbar-toggler"
@@ -102,16 +96,13 @@ const NavigationBar = () => {
                 {homeData.explore.links.map((each, index) => (
                   <NavItem key={index}>
                     <Link
+                      rel="noopener"
+                      aria-label={`/${urlString(each)}`}
+                      className="nav-link-icon text-white"
                       href={`/${urlString(each)}`}
                       onClick={handleButtonClick}
                     >
-                      <NavLink
-                        rel="noopener"
-                        aria-label={`/${urlString(each)}`}
-                        className="nav-link-icon"
-                      >
-                        {each}
-                      </NavLink>
+                      {each}
                     </Link>
                   </NavItem>
                 ))}
