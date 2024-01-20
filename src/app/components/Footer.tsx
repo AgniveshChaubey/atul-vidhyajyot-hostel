@@ -9,7 +9,7 @@ const Footer = ({ value }: { value: string }) => {
       <Card
         className={`section-lg bg-gradient-${
           value === "yes" ? "white" : "info"
-        } shadow-lg border-0`}
+        } shadow-lg border-0 py-5`}
       >
         <Container>
           <div className="p-2">

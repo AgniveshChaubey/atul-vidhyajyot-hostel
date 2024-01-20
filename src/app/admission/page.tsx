@@ -37,8 +37,8 @@ const AdmissionProcess = () => {
                       <strong>{admissionData.form.formHead}</strong>
                       <iframe
                         src={admissionData.form.formLink}
-                        width="640"
-                        height="800"
+                        width="100%"
+                        height="1200"
                       >
                         Loading...
                       </iframe>

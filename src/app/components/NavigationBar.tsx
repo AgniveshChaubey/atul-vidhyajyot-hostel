@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 // @ts-ignore
 import Headroom from "headroom.js";
 import {
@@ -16,7 +16,6 @@ import {
 import { urlString } from "../../data/helperFunctions";
 import { homeData } from "@/data/homeData";
 import Link from "next/link";
-import { useRef } from "react";
 
 const NavigationBar = () => {
   const buttonBRef = useRef(null);
@@ -33,6 +32,7 @@ const NavigationBar = () => {
 
   const handleButtonClick = () => {
     if (window.innerWidth <= 767 && buttonBRef.current) {
+      // @ts-ignore
       buttonBRef.current.click();
     }
   };
