@@ -16,6 +16,11 @@ import {
 import { urlString } from "../../data/helperFunctions";
 import { homeData } from "@/data/homeData";
 import Link from "next/link";
+import { Russo_One } from "next/font/google";
+const russoOne = Russo_One({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const NavigationBar = () => {
   const buttonBRef = useRef(null);
@@ -48,7 +53,10 @@ const NavigationBar = () => {
           <Container className="d-flex justify-content-between">
             <Link href="/">
               <NavbarBrand href="/" className="mr-lg-5 mt-1">
-                <h2 className="text-white" id="nav-title">
+                <h2
+                  className={`text-white ${russoOne.className}`}
+                  id="nav-title"
+                >
                   Atul Vidhyajyot
                 </h2>
               </NavbarBrand>
@@ -70,7 +78,10 @@ const NavigationBar = () => {
               <div className="navbar-collapse-header">
                 <Row>
                   <Col className="collapse-brand" xs="6">
-                    <h3 className="text-black" id="nav-title">
+                    <h3
+                      className={`text-black ${russoOne.className}`}
+                      id="nav-title"
+                    >
                       Atul Vidhyajyot
                     </h3>
                   </Col>

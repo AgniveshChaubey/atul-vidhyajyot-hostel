@@ -8,7 +8,7 @@ const FacilityCard = ({ facility }: { facility: string }) => {
       <Fade bottom duration={1500}>
         <Card className="shadow-lg--hover shadow w-100">
           <CardBody className="custom-card-body">
-            <div className="d-flex px-3 justify-content-center small-mobile-font">
+            <div className="d-flex px-1 mx-3 justify-content-center small-mobile-font">
               {facility}
             </div>
           </CardBody>

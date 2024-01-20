@@ -10,11 +10,16 @@ const GalleryCard = ({
     <Card className="card-lift--hover shadow mt-4">
       <CardBody
         className="pt-3 d-flex justify-content-center"
-        style={{ margin: "" }}
       >
-        <Image src={info.src} alt="Image" height={400} width={400}></Image>
+        <Image
+          className="img-responsive bg-white border border-dark rounded-2"
+          src={info.src}
+          alt="Image"
+          height={450}
+          width={450}
+        />
       </CardBody>
-      <CardFooter style={{ margin: "0px auto" }}>{info.desc}</CardFooter>
+      <CardFooter className="d-flex justify-content-center">{info.desc}</CardFooter>
     </Card>
   );
 };

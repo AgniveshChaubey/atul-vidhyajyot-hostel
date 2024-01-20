@@ -1,4 +1,4 @@
-/*!
+/* !
 
 =========================================================
 * Argon Design System React - v1.1.0 based on Argon Design System - v1.1.1
@@ -18,11 +18,6 @@
 @font-face {
   font-family: Augestina;
   src: url("/fonts/Agustina.otf");
-}
-
-#nav-title {
-  font-family: Augestina;
-  text-transform: capitalize;
 }
 
 :root {

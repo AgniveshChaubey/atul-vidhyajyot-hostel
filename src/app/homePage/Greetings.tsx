@@ -13,7 +13,7 @@ const Greetings = () => {
   return (
     <main>
       <div className="position-relative">
-        <section className="section section-lg section-shaped pb-250">
+        <section className="section section-lg section-shaped pb-5">
           <BackgroundDesign />
           <Container className="py-lg-md d-flex mt-3">
             <div className="col px-0">
@@ -26,15 +26,11 @@ const Greetings = () => {
                     {homeData.greetings.greet}
                   </p>
                 </Col>
-                <Col lg="5">
+                <Col lg="6" className="d-flex justify-content-center">
                   <Image
-                    className="mb-2 p-3 mt-3 img-responsive"
+                    className="mb-2 p-3 mt-3 img-responsive bg-white border border-dark rounded-3"
                     src={homeData.greetings.hostelImg}
                     alt="Hostel Home"
-                    style={{
-                      border: "2px solid black",
-                      backgroundColor: "white",
-                    }}
                     width={500}
                     height={500}
                   />

@@ -22,7 +22,7 @@ const FAQs = () => {
               <Row>
                 <Col lg="12">
                   <div className="text-white" style={{ textAlign: "justify" }}>
-                    <div className="display-4">{faqData.faqHeader}</div>
+                    <div className="display-4" style={{ textAlign: "left" }}>{faqData.faqHeader}</div>
 
                     <p>{faqData.headerText}</p>
                     <MyAccordion faqData={faqData.faqData} />
