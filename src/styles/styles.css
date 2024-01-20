@@ -18,13 +18,9 @@ body > div:first-child {
     padding: 0;
     margin-top: 5px;
   }
-  .small-mobile-font {
-    /* padding: 2px, 0px; */
-    font-size: x-small;
-  }
 
   .custom-card-body {
     height: 35px;
-    padding-top: 0.5vw;
+    padding-top: 5px;
   }
 }

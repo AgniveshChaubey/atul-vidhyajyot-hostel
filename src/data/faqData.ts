@@ -1,7 +1,7 @@
 import { FaqData } from "@/types/type";
 
 export const faqData: FaqData = {
-    faqHeader: "Frequently Asked Questions",
+    faqHeader: "FAQs",
     headerText: "Got Questions? Find Clear Answers Here! Everything You Need to Know About Your Hostel Stay in Our Simple and Helpful Frequently Asked Questions Section.",
     faqData: [
         {

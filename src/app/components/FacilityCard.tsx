@@ -4,11 +4,11 @@ import Fade from "react-reveal/Fade";
 
 const FacilityCard = ({ facility }: { facility: string }) => {
   return (
-    <Col lg="6" md="6" className="mt-2 col col-sm-6">
+    <Col lg="6" md="6" className="mt-2">
       <Fade bottom duration={1500}>
-        <Card className="shadow-lg--hover shadow w-100">
+        <Card className="shadow-lg--hover shadow">
           <CardBody className="custom-card-body">
-            <div className="d-flex px-1 mx-3 justify-content-center small-mobile-font">
+            <div className="d-flex justify-content-center small">
               {facility}
             </div>
           </CardBody>

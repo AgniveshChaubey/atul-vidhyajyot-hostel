@@ -22,6 +22,9 @@ const russoOne = Russo_One({
 });
 
 const NavigationBar = () => {
+  const [textColor, setTextColor] = useState(
+    window.innerWidth <= 767 ? "black" : "white"
+  );
   const buttonBRef = useRef(null);
 
   const [collapseClasses, setCollapseClasses] = useState("");
@@ -32,7 +35,17 @@ const NavigationBar = () => {
   useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main")!);
     headroom.init();
-  });
+
+    const handleResize = () => {
+      setTextColor(window.innerWidth <= 767 ? "black" : "white");
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleButtonClick = () => {
     if (window.innerWidth <= 767 && buttonBRef.current) {
@@ -51,9 +64,9 @@ const NavigationBar = () => {
         >
           <Container className="d-flex justify-content-between">
             <Link href="/" className="mr-lg-5 mt-1">
-              <h2 className={`text-white ${russoOne.className}`} id="nav-title">
+              <h3 className={`text-white ${russoOne.className}`} id="nav-title">
                 Atul Vidhyajyot
-              </h2>
+              </h3>
             </Link>
             <button
               className="navbar-toggler"
@@ -65,19 +78,19 @@ const NavigationBar = () => {
             <UncontrolledCollapse
               toggler="#navbar_global"
               navbar
-              className={collapseClasses}
+              className={`${collapseClasses}`}
               onExiting={onExiting}
               onExited={onExited}
             >
               <div className="navbar-collapse-header">
                 <Row>
                   <Col className="collapse-brand" xs="6">
-                    <h3
+                    <h4
                       className={`text-black ${russoOne.className}`}
                       id="nav-title"
                     >
                       Atul Vidhyajyot
-                    </h3>
+                    </h4>
                   </Col>
                   <Col className="collapse-close" xs="6">
                     <button
@@ -98,7 +111,7 @@ const NavigationBar = () => {
                     <Link
                       rel="noopener"
                       aria-label={`/${urlString(each)}`}
-                      className="nav-link-icon text-white"
+                      className={`nav-link-icon text-${textColor}`}
                       href={`/${urlString(each)}`}
                       onClick={handleButtonClick}
                     >

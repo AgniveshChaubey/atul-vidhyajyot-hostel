@@ -23,9 +23,9 @@ const AboutUs = () => {
                   <div className="text-white" style={{ textAlign: "justify" }}>
                     {aboutData.map((each, index) => (
                       <>
-                        <h5 className="text-white" key={index}>
-                          <u>{each.header}</u>
-                        </h5>
+                        <div className="display-4" key={index}>
+                          {each.header}
+                        </div>
                         {each.briefInfo.map((info, i) => (
                           <p className="m-0" key={i}>
                             {info}

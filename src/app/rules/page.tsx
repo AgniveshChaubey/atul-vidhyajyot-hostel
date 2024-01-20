@@ -34,7 +34,7 @@ const Rules = () => {
                           margin: "20px",
                         }}
                       />
-                      <ul className="ml-3">
+                      <ul>
                         {rulesData.rules.gujarati.map((rule, index) => (
                           <li key={index}>{rule}</li>
                         ))}
@@ -46,7 +46,7 @@ const Rules = () => {
                           margin: "20px",
                         }}
                       />
-                      <ul className="ml-3" style={{ listStyleType: "square" }}>
+                      <ul style={{ listStyleType: "square" }}>
                         {rulesData.rules.english.map((rule, index) => (
                           <li key={index}>{rule}</li>
                         ))}

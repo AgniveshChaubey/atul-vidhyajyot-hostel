@@ -12,18 +12,12 @@ const ExploreMore = () => {
         </div>
         <Row className="row-grid align-items-center">
           {homeData.explore.links.map((link, i) => (
-            <Col lg="6" md="6" key={i} className="mt-2 col col-sm-6">
-              <Card
-                className="shadow-lg--hover shadow"
-                style={{ borderRadius: "20px" }}
-              >
-                <CardBody
-                  className="bg-gradient-info custom-card-body"
-                  style={{ borderRadius: "20px" }}
-                >
+            <Col lg="6" md="6" key={i} className="mt-2">
+              <Card className="shadow-lg--hover shadow bg-gradient-info rounded-5">
+                <CardBody className="custom-card-body">
                   <Link href={link === "Home" ? "/" : link.toLowerCase()}>
                     <div className="d-flex mx-3 justify-content-center">
-                      <div className="fw-bold text-white small-mobile-font">
+                      <div className="fw-bold text-white small">
                         {link} <FaSquareArrowUpRight />
                       </div>
                     </div>
