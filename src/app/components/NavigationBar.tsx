@@ -15,8 +15,12 @@ import {
 } from "reactstrap";
 import { urlString } from "../../data/helperFunctions";
 import { homeData } from "@/data/homeData";
+import Link from "next/link";
+import { useRef } from "react";
 
 const NavigationBar = () => {
+  const buttonBRef = useRef(null);
+
   const [collapseClasses, setCollapseClasses] = useState("");
   const onExiting = () => setCollapseClasses("collapsing-out");
 
@@ -27,6 +31,12 @@ const NavigationBar = () => {
     headroom.init();
   });
 
+  const handleButtonClick = () => {
+    if (window.innerWidth <= 767 && buttonBRef.current) {
+      buttonBRef.current.click();
+    }
+  };
+
   return (
     <>
       <header className="header-global">
@@ -36,11 +46,13 @@ const NavigationBar = () => {
           id="navbar-main"
         >
           <Container className="d-flex justify-content-between">
-            <NavbarBrand href="/" className="mr-lg-5 mt-1">
-              <h2 className="text-white" id="nav-title">
-                Atul Vidhyajyot
-              </h2>
-            </NavbarBrand>
+            <Link href="/">
+              <NavbarBrand href="/" className="mr-lg-5 mt-1">
+                <h2 className="text-white" id="nav-title">
+                  Atul Vidhyajyot
+                </h2>
+              </NavbarBrand>
+            </Link>
             <button
               className="navbar-toggler"
               aria-label="navbar_toggle"
@@ -63,7 +75,11 @@ const NavigationBar = () => {
                     </h3>
                   </Col>
                   <Col className="collapse-close" xs="6">
-                    <button className="navbar-toggler" id="navbar_global">
+                    <button
+                      className="navbar-toggler"
+                      id="navbar_global"
+                      ref={buttonBRef}
+                    >
                       {" "}
                       <span />
                       <span />
@@ -74,14 +90,18 @@ const NavigationBar = () => {
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
                 {homeData.explore.links.map((each, index) => (
                   <NavItem key={index}>
-                    <NavLink
-                      rel="noopener"
-                      aria-label={`/${urlString(each)}`}
-                      className="nav-link-icon"
+                    <Link
                       href={`/${urlString(each)}`}
+                      onClick={handleButtonClick}
                     >
-                      {each}
-                    </NavLink>
+                      <NavLink
+                        rel="noopener"
+                        aria-label={`/${urlString(each)}`}
+                        className="nav-link-icon"
+                      >
+                        {each}
+                      </NavLink>
+                    </Link>
                   </NavItem>
                 ))}
               </Nav>
