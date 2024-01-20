@@ -61,16 +61,16 @@ export const homeData: HomeData = {
     facilities: {
         title: "Facilities",
         facilityList: [
-            "Free Accommodation",
-            "2 Meals per day",
+            "Free Stay",
+            "2 Meals a day",
             "Biweekly Feast",
             "Hot Water",
-            "Drinking RO Water",
-            "Library/Reading Room",
+            "RO Water",
+            "Reading Room",
             "Gym",
             "Clean Campus",
             "Parking Facility",
-            "Weekly Mentoring Program",
+            "Mentorhips",
             "Some Extra Perks..."
         ]
     },
