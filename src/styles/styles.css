@@ -8,10 +8,6 @@ body > div:first-child {
     height: auto;
   }
 
-  .text-on-mobile {
-    font-size: 16px;
-  }
-
   .small-body {
     width: 100%;
     height: 30px;

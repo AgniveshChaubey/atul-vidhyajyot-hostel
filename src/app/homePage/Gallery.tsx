@@ -1,7 +1,5 @@
 // @ts-ignore
 import Lottie from "react-lottie";
-// @ts-ignore
-import Fade from "react-reveal/Fade";
 import { Col, Container, Row } from "reactstrap";
 import general from "../../public/lottie/general.json";
 import functions from "../../public/lottie/functions.json";
@@ -17,9 +15,7 @@ const Gallery = () => {
 
       <Row className="my-5">
         <Col lg="6" className="order-1 order-lg-2 rounded-2">
-          <Fade right duration={1000}>
-            <GeneralCarousel items={homeData.gallery.generalCarouselPhotos} />
-          </Fade>
+          <GeneralCarousel items={homeData.gallery.generalCarouselPhotos} />
         </Col>
         <Col lg="6" className="order-2 order-lg-1">
           <Lottie
@@ -33,9 +29,7 @@ const Gallery = () => {
       </Row>
       <Row className="my-5">
         <Col lg="6" className="order-2 order-lg-1 rounded-2">
-          <Fade right duration={1000}>
-            <GeneralCarousel items={homeData.gallery.functionCarouselPhotos} />
-          </Fade>
+          <GeneralCarousel items={homeData.gallery.functionCarouselPhotos} />
         </Col>
         <Col lg="6" className="order-1 order-lg-2">
           <Lottie

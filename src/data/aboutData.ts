@@ -9,7 +9,7 @@ export const aboutData: AboutData[] = [
             "This all-boys hostel provides free accommodation for students and delicious food in a beautiful campus with lush greenery and tall trees. Rector overlook its administration and strictly remind students to follow basic moral disciplines. Students start their day off with a morning bath befor 7:30 AM and are encouraged to attend daily prayer (prarthna) in the evening. Special cultural programs are held ocassionally while maintaining the discipline of hostel. Recreational facilities provide students with an opportunity to stay fit and healthy while continuing their education."]
     },
     {
-        header: "Owner - Mr. R. P. Patel (Kaka)",
+        header: "Owner - Mr. R. P. Patel",
         briefInfo: [
             "Full Name: Ramanbhai Poonambhai Patel",
             "17/03/1934 - 01/08/2022 (Birth - Devataj)",

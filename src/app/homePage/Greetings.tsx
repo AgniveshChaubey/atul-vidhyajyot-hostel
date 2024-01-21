@@ -18,14 +18,6 @@ const Greetings = () => {
           <Container className="py-lg-md d-flex mt-3">
             <div className="col px-0">
               <Row>
-                <Col lg="6">
-                  <p
-                    className="lead text-white text-on-mobile"
-                    style={{ textAlign: "justify" }}
-                  >
-                    {homeData.greetings.greet}
-                  </p>
-                </Col>
                 <Col lg="6" className="d-flex justify-content-center pt-3">
                   <Image
                     className="mb-2 p-3 mt-3 img-responsive bg-white border border-dark rounded-3"
@@ -34,6 +26,14 @@ const Greetings = () => {
                     width={500}
                     height={500}
                   />
+                </Col>
+                <Col lg="6">
+                  <p
+                    className="pt-4 text-white"
+                    style={{ textAlign: "justify" }}
+                  >
+                    {homeData.greetings.greet}
+                  </p>
                 </Col>
               </Row>
             </div>
