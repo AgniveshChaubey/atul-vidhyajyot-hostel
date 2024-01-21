@@ -22,11 +22,6 @@ const russoOne = Russo_One({
 });
 
 const NavigationBar = () => {
-  const [textColor, setTextColor] = useState(
-    typeof window !== "undefined" && window.innerWidth <= 767
-      ? "black"
-      : "white"
-  );
   const buttonBRef = useRef(null);
 
   const [collapseClasses, setCollapseClasses] = useState("");
@@ -37,20 +32,6 @@ const NavigationBar = () => {
   useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main")!);
     headroom.init();
-
-    const handleResize = () => {
-      setTextColor(
-        typeof window !== "undefined" && window.innerWidth <= 767
-          ? "black"
-          : "white"
-      );
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   const handleButtonClick = () => {
@@ -117,7 +98,7 @@ const NavigationBar = () => {
                     <Link
                       rel="noopener"
                       aria-label={`/${urlString(each)}`}
-                      className={`nav-link-icon text-${textColor}`}
+                      className={`nav-link-icon text-black`}
                       href={`/${urlString(each)}`}
                       onClick={handleButtonClick}
                     >
