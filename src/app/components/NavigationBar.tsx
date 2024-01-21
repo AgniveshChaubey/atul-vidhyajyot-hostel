@@ -23,7 +23,9 @@ const russoOne = Russo_One({
 
 const NavigationBar = () => {
   const [textColor, setTextColor] = useState(
-    window.innerWidth <= 767 ? "black" : "white"
+    typeof window !== "undefined" && window.innerWidth <= 767
+      ? "black"
+      : "white"
   );
   const buttonBRef = useRef(null);
 
@@ -37,7 +39,11 @@ const NavigationBar = () => {
     headroom.init();
 
     const handleResize = () => {
-      setTextColor(window.innerWidth <= 767 ? "black" : "white");
+      setTextColor(
+        typeof window !== "undefined" && window.innerWidth <= 767
+          ? "black"
+          : "white"
+      );
     };
 
     window.addEventListener("resize", handleResize);
