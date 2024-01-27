@@ -8,7 +8,7 @@ import { homeData } from "@/data/homeData";
 
 const Gallery = () => {
   return (
-    <Container className="text-center my-5 section section-lg p-0">
+    <Container className="text-center my-5 section section-lg">
       <div className="display-6 text-info fw-bold">
         {homeData.gallery.title}
       </div>

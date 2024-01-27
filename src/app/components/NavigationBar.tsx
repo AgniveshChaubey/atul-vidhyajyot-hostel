@@ -35,7 +35,7 @@ const NavigationBar = () => {
   }, []);
 
   const handleButtonClick = () => {
-    if (window.innerWidth <= 767 && buttonBRef.current) {
+    if (window.innerWidth <= 991 && buttonBRef.current) {
       // @ts-ignore
       buttonBRef.current.click();
     }
