@@ -98,7 +98,7 @@ const NavigationBar = () => {
                     <Link
                       rel="noopener"
                       aria-label={`/${urlString(each)}`}
-                      className={`nav-link-icon text-black`}
+                      className={`nav-link-icon text-color`}
                       href={`/${urlString(each)}`}
                       onClick={handleButtonClick}
                     >

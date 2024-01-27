@@ -2,7 +2,11 @@ body > div:first-child {
   overflow-x: hidden;
 }
 
-@media (max-width: 767px) {
+.text-color {
+  color: white;
+}
+
+@media (max-width: 991px) {
   .img-responsive {
     width: 100%;
     height: auto;
@@ -18,5 +22,9 @@ body > div:first-child {
   .custom-card-body {
     height: 35px;
     padding-top: 5px;
+  }
+
+  .text-color {
+    color: black;
   }
 }
