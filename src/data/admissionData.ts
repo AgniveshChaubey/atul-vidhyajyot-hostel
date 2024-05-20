@@ -15,7 +15,7 @@ export const admissionData: AdmissionData = {
         ]
     },
     form: {
-        formHead: "Students are required to complete the Google Form below:",
+        formHead: "Students are required to complete the Google Form below: ",
         formLink: "https://docs.google.com/forms/d/1dvWwuGcoq6HRr_PZlhz_CJ4_aHxRz7FMXvh60APKrdA/viewform?embedded=true"
     }
 }
