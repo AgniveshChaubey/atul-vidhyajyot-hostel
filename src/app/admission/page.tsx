@@ -42,8 +42,8 @@ const AdmissionProcess = () => {
                       >
                         Loading...
                       </iframe>
+                      <a href="https://forms.gle/B7EFJdX7xedVwnNV8">Click here to fill the form.</a>
                     </p>
-                    <p><a href="https://forms.gle/B7EFJdX7xedVwnNV8">Click here to visit Example</a></p>
                   </div>
                 </Col>
               </Row>
