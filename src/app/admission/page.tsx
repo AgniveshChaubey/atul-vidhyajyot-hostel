@@ -35,7 +35,7 @@ const AdmissionProcess = () => {
 
                     <p style={{ textAlign: "center" }}>
                       <strong>{admissionData.form.formHead}</strong>
-                      <a href="https://forms.gle/B7EFJdX7xedVwnNV8" style="color: white;">Click here to fill out the form.</a>
+                      <a href="https://forms.gle/B7EFJdX7xedVwnNV8" style={{ color: "white" }}>Click here to fill out the form.</a>
                       <iframe
                         src={admissionData.form.formLink}
                         width="100%"
